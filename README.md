@@ -2,7 +2,7 @@
 
 ![Task report system](/assets/screenshots/project-screen.png "Task report system")
 
-### The tool for task management and report creation. Based on the best UX principles.
+### The tool for task management and report creation.
 - Create, edit or delete project issues. 
 - Change working status of tasks.
 - Find tasks by keywords or status.
