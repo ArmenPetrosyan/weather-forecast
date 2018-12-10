@@ -10,18 +10,22 @@
     "type": "git",
     "url": "git+https://github.com/ArmenPetrosyan/lia-task-report.git"
   },
-  "author": "",
+  "author": "Armen Petrosian",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ArmenPetrosyan/lia-task-report/issues"
   },
   "homepage": "https://github.com/ArmenPetrosyan/lia-task-report#readme",
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "redux": "^4.0.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
     "eslint": "^5.10.0"
   }
 }
