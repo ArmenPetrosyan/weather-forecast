@@ -1,12 +1,11 @@
 import React, {Component, Fragment} from 'react';
+import Header from './templates/Header';
 
-class App extends React.Component {
+class App extends Component {
     render () {
         return (
-            <Fragment>
-                <header>
-                    <h1>Hello app</h1>
-                </header>
+            <div className="App">
+                <Header>New header</Header>  
                 <main>
                     <ul>
                         <li>Asaldkaldkla</li>
@@ -19,7 +18,7 @@ class App extends React.Component {
                 <footer>
                     <span>&copy; Hello app</span>
                 </footer>
-            </Fragment>    
+            </div>    
         )
     }
 }

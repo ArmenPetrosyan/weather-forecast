@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ws -s public/index.html",
-    "build": "webpack"
+    "start": "webpack-dev-server --config=webpack.config.js",
+    "build": "webpack --config=webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -15,9 +15,14 @@
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
+    "css-loader": "^2.0.1",
+    "node-sass": "^4.11.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
@@ -27,6 +32,7 @@
     "babel-loader": "^8.0.4",
     "eslint": "^5.10.0",
     "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   }
 }
