@@ -1,11 +1,17 @@
 const path = require('path');
 const webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const env = process.env.NODE_ENV || 'development'
 
 module.exports = {
-    mode: 'development',
-    entry: './src/index.js',
+    mode: env,
+    entry: {
+        app: './src/index.js'
+    },
     output: {
-        filename: 'main.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
@@ -22,20 +28,32 @@ module.exports = {
                     {
                         loader: 'css-loader',
                         options: {
-                            modules: true
+                            modules: true,
+                            localIdentName: '[name]--[hash:base64:5]',
                         }
                     }, 
                     'sass-loader'
                 ],
                 exclude: "/node_modules/"
+            },
+            {
+                test: /\.pug$/,
+                use: ['pug-loader'],
+                exclude: "/node_modules/"
             }
         ]
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin({})
+        new CleanWebpackPlugin(['dist']),
+        new webpack.HotModuleReplacementPlugin({}),
+        new HtmlWebpackPlugin({
+            title: 'Arnie\'s React Boilerplate',
+            template: 'public/index.pug',
+            filename: 'index.html'
+        })
     ],
     devServer: {
-        contentBase: [path.join(__dirname, 'public'), path.resolve(__dirname, 'dist')],
+        contentBase: path.join(__dirname, 'dist'),
         hot: true,
         port: 9000
     }
