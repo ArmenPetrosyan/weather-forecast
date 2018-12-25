@@ -2,6 +2,7 @@
 ![React v.16](https://img.shields.io/badge/view-React-green.svg?logo=react)
 ![State Redux](https://img.shields.io/badge/state-Redux-green.svg?logo=redux)
 ![Style SCSS](https://img.shields.io/badge/styles-SCSS-green.svg?logo=sass)
+![Bundler Webpack](https://img.shields.io/badge/bundler-Webpack-green.svg?logo=webpack)
 
 ## My React.js custom boilerplate
 
