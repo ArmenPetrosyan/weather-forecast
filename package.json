@@ -1,7 +1,7 @@
 {
-  "name": "lia-task-report",
+  "name": "arnie-react-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Boilerplate for React-based frontend projects",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config=webpack.config.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArmenPetrosyan/lia-task-report.git"
+    "url": "git+https://github.com/ArmenPetrosyan/react-boilerplate.git"
   },
   "author": "Armen Petrosian",
   "license": "ISC",
@@ -17,14 +17,17 @@
     "@babel/polyfill": "^7.0.0",
     "apply-loader": "^2.0.0",
     "css-loader": "^2.0.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "i18next": "^13.0.1",
+    "i18next-browser-languagedetector": "^2.2.4",
     "node-sass": "^4.11.0",
     "pug-loader": "^2.4.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-i18next": "^8.4.0",
     "redux": "^4.0.1",
     "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "uglifyjs-webpack-plugin": "^2.0.1"
+    "style-loader": "^0.23.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
@@ -33,7 +36,10 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^1.0.0",
-    "eslint": "^5.10.0",
+    "eslint": "^5.11.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
     "html-webpack-plugin": "^3.2.0",
     "pug": "^2.0.3",
     "webpack": "^4.27.1",
