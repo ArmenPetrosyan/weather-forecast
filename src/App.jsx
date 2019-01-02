@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
+import { withNamespaces } from 'react-i18next';
+import PropTypes from 'prop-types';
 import Header from './templates/Header';
 
 class App extends Component {
+  static propTypes = {
+    t: PropTypes.func
+  }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -13,7 +19,7 @@ class App extends Component {
     const { t } = this.props;
     return (
       <div className="App">
-        <Header>{t('Hello')}</Header>
+        <Header>{ t('Hello', {dev: 'Arnie'}) }</Header>
         <main>
           <ul>
             <li>Asaldkaldkla</li>
@@ -34,4 +40,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withNamespaces()(App);

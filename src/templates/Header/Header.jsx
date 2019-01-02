@@ -1,14 +1,23 @@
 import React from 'react';
-import styles from './Header.scss'
+import PropTypes from 'prop-types';
+import { withNamespaces } from 'react-i18next';
+import styles from './Header.scss';
 
 class Header extends React.Component {
-    render () {
-        return (
-            <header className={styles.Header}>
-                <h1>{this.props.children}</h1>
-            </header>
-        )
-    }
+  render() {
+    const { t, children } = this.props;
+    return (
+      <header className={styles.Header}>
+        <h1>{ children }</h1>
+        <h2>{ t('azaza') }</h2>
+      </header>
+    );
+  }
 }
 
-export default Header;
+Header.propTypes = {
+  t: PropTypes.func.isRequired,
+  children: PropTypes.node.isRequired,
+};
+
+export default withNamespaces()(Header);

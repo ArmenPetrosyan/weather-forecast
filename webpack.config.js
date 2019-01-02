@@ -30,7 +30,7 @@ module.exports = {
             options: {
               modules: true,
               localIdentName: '[name]--[hash:base64:5]',
-            }
+            },
           },
           'sass-loader',
         ],
