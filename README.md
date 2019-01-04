@@ -8,16 +8,23 @@
 ![Codestyle Airbnb](https://img.shields.io/badge/codestyle-Airbnb-green.svg?logo=airbnb)
 
 ## Arnie's React JS custom boilerplate
+This is a base-configured React app. I've made it to create my own React JS projects easily in future.
 
-### This boilerplate includes:
+### This project template includes next features:
+Implemented:
 * Building with **Webpack 4** using configuration written from scratch
 * Separated **Production** and **Development** configs
-* ES6+ with **Babel 7**
+* ES6+ support with **Babel 7**
 * **React 16.x** view components
 * **CSS Modules** approach for component styling (with **SCSS** as pre-processor)
 * **Redux**-based state management
 * Code style controlled by Airbnb **ESlint** config, and a few additional rules and overrides.
 * Internationalization with **i18next** library
+
+Not implemented yet:
+* Work with external API
+* Unit Testing
+* Both Function and Feature-first folder structures
 
 #### To *start* the project use the following instructions:
 ```
