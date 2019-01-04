@@ -51,10 +51,14 @@ module.exports = {
       template: 'public/index.pug',
       filename: 'index.html',
     }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(env),
+    }),
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     hot: true,
     port: 9000,
   },
+  devtool: (env === 'development') ? 'source-map' : null,
 };
