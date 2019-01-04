@@ -1,9 +1,7 @@
 import i18next from 'i18next';
 import { reactI18nextModule } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-
-import ru from './languages/ru.json';
-import ua from './languages/ua.json';
+import translationResources from './languages';
 
 
 const languageDetector = new LanguageDetector(null, {
@@ -31,10 +29,7 @@ i18next
   .use(languageDetector)
   .use(reactI18nextModule)
   .init({
-    resources: {
-      ru,
-      ua,
-    },
+    resources: translationResources,
     fallbackLng: 'en',
     defaultNS: 'boilerplate',
     interpolation: {
