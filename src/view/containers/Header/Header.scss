@@ -1,0 +1,8 @@
+.Header {
+    padding: 20px 0;
+
+    [class *= "Container--"] {
+        align-items: center;
+        justify-content: space-between;
+    }
+}

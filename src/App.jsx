@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux'
 import { withNamespaces } from 'react-i18next';
 import PropTypes from 'prop-types';
-import Header from './templates/Header';
-import ChangeName from './view/components/ConnectedComponent.jsx';
+import Header from './view/containers/Header';
 import store from './store';
+
+import styles from './App.scss';
 
 class App extends Component {
   static propTypes = {
@@ -22,9 +23,8 @@ class App extends Component {
     const { t } = this.props;
     return (
       <Provider store={store}>
-        <div className="App">
-          <Header>{ t('Hello', {dev: 'Arnie'}) }</Header>
-          <ChangeName />
+        <div className={styles.App}>
+          <Header />
           <main>
             <ul>
               <li>Asaldkaldkla</li>

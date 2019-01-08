@@ -3,15 +3,22 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { withNamespaces } from 'react-i18next';
 import styles from './Header.scss';
+import typography from '../../styles/Typography.scss';
+import base from '../../../App.scss';
+
+import { DateWidget } from '../../components';
 
 class Header extends React.Component {
   render() {
-    const { t, children, name } = this.props;
+    const { t } = this.props;
     return (
       <header className={styles.Header}>
-        <h1>{ children }</h1>
-        <h2>{ t('azaza') }</h2>
-        <h3>{ name }</h3>
+        <div className={base.Container}>
+          <h1 className={typography.H0}>
+            { t('The weather monitor') }
+          </h1>
+          <DateWidget dateObject={new Date()} />
+        </div>
       </header>
     );
   }
@@ -19,8 +26,6 @@ class Header extends React.Component {
 
 Header.propTypes = {
   t: PropTypes.func.isRequired,
-  children: PropTypes.node.isRequired,
-  name: PropTypes.string.isRequired,
 };
 
 const mapStateToProps = (state) => {

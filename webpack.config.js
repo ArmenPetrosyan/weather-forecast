@@ -29,7 +29,7 @@ module.exports = {
             loader: 'css-loader',
             options: {
               modules: true,
-              localIdentName: '[name]--[hash:base64:5]',
+              localIdentName: '[local]--[hash:base64:5]',
             },
           },
           'sass-loader',
