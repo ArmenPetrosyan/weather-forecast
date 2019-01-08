@@ -6,7 +6,7 @@ import translationResources from './languages';
 
 const languageDetector = new LanguageDetector(null, {
   order: [
-    'boilerplateLocale',
+    'weather-forecast',
     'querystring',
     'localStorage',
     'navigator',
@@ -17,10 +17,9 @@ const languageDetector = new LanguageDetector(null, {
 });
 
 languageDetector.addDetector({
-  name: 'boilerplateLocale',
+  name: 'weather-forecast',
   lookup() {
-    let lang = 'ua';
-    return lang;
+    return 'ua';
   },
 });
 
@@ -31,9 +30,18 @@ i18next
   .init({
     resources: translationResources,
     fallbackLng: 'en',
-    defaultNS: 'boilerplate',
+    defaultNS: 'weather',
     interpolation: {
-      escapeValue: false,
+      format: (value, format, lng) => {
+        const lang = (lng === 'ua') ? 'uk' : lng;
+        const formatter = new Intl.DateTimeFormat(lang, {
+          weekday: 'long',
+          month: 'long',
+          day: 'numeric',
+        });
+        if (value instanceof Date) return formatter.format(value);
+        return value;
+      },
     },
   });
 

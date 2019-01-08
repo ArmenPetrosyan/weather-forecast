@@ -1,7 +1,7 @@
 {
-  "boilerplate": {
-    "Hello": "Привіт світе!",
-    "Hello app": "Привіт аплікейшн",
-    "azaza": "ололойко {{dev}}"
+  "weather": {
+    "The weather monitor": "Монітор погоди",
+    "Today": "Сьогодні",
+    "Tomorrow": "Завтра"
   }
 }
