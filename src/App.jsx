@@ -3,20 +3,20 @@ import { Provider } from 'react-redux'
 import { withNamespaces } from 'react-i18next';
 import PropTypes from 'prop-types';
 import Header from './view/containers/Header';
+import SearchPanel from './view/containers/SearchPanel';
+import Footer from './view/containers/Footer';
 import store from './store';
 
+import './base.css';
 import styles from './App.scss';
 
 class App extends Component {
   static propTypes = {
     t: PropTypes.func
-  }
+  };
 
   constructor(props) {
     super(props);
-    this.state = {
-      a: 1,
-    };
   }
 
   render() {
@@ -25,21 +25,8 @@ class App extends Component {
       <Provider store={store}>
         <div className={styles.App}>
           <Header />
-          <main>
-            <ul>
-              <li>Asaldkaldkla</li>
-              <li>dsdasdsad</li>
-              <li>fasfsafasfasfas</li>
-              <li>wretwetw</li>
-              <li>reee</li>
-            </ul>
-          </main>
-          <footer>
-            <span>
-              &copy;
-              { t('Hello app') }
-            </span>
-          </footer>
+          <SearchPanel />
+          <Footer />
         </div>
       </Provider>
     );
