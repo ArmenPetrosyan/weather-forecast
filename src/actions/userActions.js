@@ -1,3 +1,5 @@
-const setUserName = newName => ({ type: 'SET_NAME', data: { name: newName } });
+const setLocale = newLocale => ({ type: 'SET_LOCALE', data: { locale: newLocale } });
 
-export default setUserName;
+export {
+  setLocale,
+};
