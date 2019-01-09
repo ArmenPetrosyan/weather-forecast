@@ -9,6 +9,10 @@ import base from '../../../App.scss';
 import { DateWidget } from '../../components';
 
 class Header extends React.Component {
+  static propTypes = {
+    t: PropTypes.func.isRequired,
+  };
+
   render() {
     const { t } = this.props;
     return (
@@ -24,14 +28,4 @@ class Header extends React.Component {
   }
 }
 
-Header.propTypes = {
-  t: PropTypes.func.isRequired,
-};
-
-const mapStateToProps = (state) => {
-  return {
-    name: state.name,
-  };
-};
-
-export default connect(mapStateToProps)(withNamespaces()(Header));
+export default connect()(withNamespaces()(Header));

@@ -8,7 +8,7 @@ const DateWidget = (props) => {
   return (
     <div className={styles.DateWidget}>
       <div className={styles['DateWidget--title']}>
-        { t('FormattedDate', { date: dateObject }) }
+        { t('__formattedDate__', { date: dateObject }) }
       </div>
       <div className={styles['DateWidget--subtitle']}>
         { t('Today') }
@@ -19,7 +19,7 @@ const DateWidget = (props) => {
 
 DateWidget.propTypes = {
   t: PropTypes.func.isRequired,
-  dateObject: PropTypes.func.isRequired,
-}
+  dateObject: PropTypes.instanceOf(Date).isRequired,
+};
 
 export default withNamespaces()(DateWidget);
