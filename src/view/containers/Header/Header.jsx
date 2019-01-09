@@ -3,10 +3,10 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { withNamespaces } from 'react-i18next';
 import styles from './Header.scss';
-import typography from '../../styles/Typography.scss';
-import base from '../../../App.scss';
+import typography from 'View/styles/Typography.scss';
+import base from 'Root/App.scss';
 
-import { DateWidget } from '../../components';
+import { DateWidget } from 'Components';
 
 class Header extends React.Component {
   static propTypes = {

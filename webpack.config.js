@@ -14,6 +14,13 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  resolve: {
+    alias: {
+      Root: path.resolve(__dirname, 'src/'),
+      View: path.resolve(__dirname, 'src/view/'),
+      Components: path.resolve(__dirname, 'src/view/components/'),
+    },
+  },
   module: {
     rules: [
       {

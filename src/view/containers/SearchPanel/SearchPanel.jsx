@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import base from 'Root/App.scss';
 import styles from './SearchPanel.scss';
-import base from '../../../App.scss';
 
 class SearchPanel extends React.Component {
   constructor(props) {
@@ -15,6 +15,7 @@ class SearchPanel extends React.Component {
           <form action="#">
             <input type="text" />
           </form>
+
         </div>
       </section>
     );

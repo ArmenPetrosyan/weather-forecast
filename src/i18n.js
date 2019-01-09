@@ -19,7 +19,7 @@ const languageDetector = new LanguageDetector(null, {
 languageDetector.addDetector({
   name: 'weather-forecast',
   lookup() {
-    return 'ua';
+    return 'en';
   },
 });
 

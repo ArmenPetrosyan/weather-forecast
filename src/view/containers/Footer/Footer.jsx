@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { withNamespaces } from 'react-i18next';
 import styles from './Footer.scss';
-import base from '../../../App.scss';
+import base from 'Root/App.scss';
 
-import { LocaleSwitcher } from '../../components';
+import { LocaleSwitcher } from 'Components';
 import OpenWeatherMapImage from './images/OpenWeatherMap.svg';
 
 class Footer extends React.Component {

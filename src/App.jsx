@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux'
 import { withNamespaces } from 'react-i18next';
 import PropTypes from 'prop-types';
-import Header from './view/containers/Header';
-import SearchPanel from './view/containers/SearchPanel';
-import Footer from './view/containers/Footer';
+import Header from 'View/containers/Header';
+import SearchPanel from 'View/containers/SearchPanel';
+import Footer from 'View/containers/Footer';
 import store from './store';
 
-import './base.css';
+import './reset.css';
 import styles from './App.scss';
 
 class App extends Component {
