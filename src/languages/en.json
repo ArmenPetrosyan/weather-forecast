@@ -1,5 +1,5 @@
 {
   "weather": {
-    "FormattedDate": "{{date,''}}"
+    "__formattedDate__": "{{date,''}}"
   }
 }

@@ -2,6 +2,7 @@
   "weather": {
     "The weather monitor": "Погодный монитор",
     "Today": "Сегодня",
-    "Tomorrow": "Завтра"
+    "Tomorrow": "Завтра",
+    "© 2018 Armen Petrosian. Data provided by": "© 2018 Armen Petrosian. Данные предоставлены сервисом"
   }
 }

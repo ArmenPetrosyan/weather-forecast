@@ -31,6 +31,7 @@ i18next
     resources: translationResources,
     fallbackLng: 'en',
     defaultNS: 'weather',
+    keySeparator: '>',
     interpolation: {
       format: (value, format, lng) => {
         const lang = (lng === 'ua') ? 'uk' : lng;
