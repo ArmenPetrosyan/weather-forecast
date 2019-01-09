@@ -1,0 +1,18 @@
+.Footer {
+  padding: 20px 0;
+
+  &--copyright {
+    display: flex;
+    align-items: center;
+
+    &-text {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 12px;
+      color: #668297;
+    }
+
+    &-image {
+      margin-left: 5px;
+    }
+  }
+}

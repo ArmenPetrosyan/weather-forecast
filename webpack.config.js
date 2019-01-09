@@ -22,7 +22,7 @@ module.exports = {
         exclude: '/node_modules/',
       },
       {
-        test: /\.scss$/,
+        test: /\.s?css$/,
         use: [
           'style-loader',
           {
@@ -40,6 +40,17 @@ module.exports = {
         test: /\.pug$/,
         use: ['pug-loader'],
         exclude: '/node_modules/',
+      },
+      {
+        test: /\.(png|jpg|svg)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
       },
     ],
   },
