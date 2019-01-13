@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { WeatherWidget } from 'Components';
 import base from 'Root/App.scss';
 import styles from './SearchPanel.scss';
 
@@ -12,10 +13,8 @@ class SearchPanel extends React.Component {
     return (
       <section className={styles.SearchPanel}>
         <div className={base.Container}>
-          <form action="#">
-            <input type="text" />
-          </form>
-
+          <input type="text"/>
+          <WeatherWidget />
         </div>
       </section>
     );

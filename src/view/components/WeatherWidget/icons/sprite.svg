@@ -1,0 +1,324 @@
+<svg width="0" height="0" class="hidden">
+  <symbol viewBox="0 0 104 66" fill="none" xmlns="http://www.w3.org/2000/svg" id="broken-clouds-day">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M94.4 36.997c4.966-.54 8.92-4.746 8.92-9.9 0-4.667-3.242-8.712-7.543-9.59C94.599 7.78 86.515.177 76.71.177c-6.895 0-12.94 3.69-16.331 9.283-.084-.001-.167-.024-.252-.024-7.27 0-13.165 6.325-13.165 13.78 0 7.194 5.488 13.24 12.405 13.781H94.4z"
+      fill="#B8C7D8"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M94.4 36.997c4.966-.54 8.92-4.746 8.92-9.9 0-4.667-3.242-8.712-7.543-9.59C94.599 7.78 86.515.177 76.71.177c-6.895 0-12.94 3.69-16.331 9.283-.084-.001-.167-.024-.252-.024-7.27 0-13.165 6.325-13.165 13.78 0 7.194 5.488 13.24 12.405 13.781H94.4z"
+      fill="url(#a)" fill-opacity=".2"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.712 51.843h40.102c7.367 0 13.369-6.188 13.369-13.543 0-6.189-4.064-11.36-9.78-13.046-.15-5.515-4.718-9.918-10.343-9.918-1.635 0-3.175.397-4.55 1.063-2.433-5.697-8.143-9.69-14.8-9.69-7.258 0-13.389 4.76-15.373 11.287-8.58 1.023-15.156 8.13-15.156 16.874 0 9.16 7.126 16.974 16.53 16.974z"
+      fill="#fff" filter="url(#b)"></path>
+    <defs>
+      <filter id="b" x=".181" y=".71" width="90.001" height="65.134" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+      <linearGradient id="a" x1="46.962" y1=".177" x2="46.962" y2="36.997" gradientUnits="userSpaceOnUse">
+        <stop stop-opacity=".01"></stop>
+        <stop offset="1" stop-opacity=".5"></stop>
+      </linearGradient>
+    </defs>
+  </symbol>
+  <symbol viewBox="0 0 104 67" fill="none" xmlns="http://www.w3.org/2000/svg" id="broken-clouds-night">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.548 37.256h35.033c4.965-.54 8.92-4.746 8.92-9.899 0-4.667-3.242-8.713-7.543-9.59C94.78 8.038 86.696.436 76.89.436c-6.895 0-12.94 3.689-16.331 9.283-.084-.002-.167-.025-.252-.025-7.27 0-13.165 6.325-13.165 13.78 0 7.195 5.488 13.24 12.405 13.781z"
+      fill="#2D6CB5"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.548 37.256h35.033c4.965-.54 8.92-4.746 8.92-9.899 0-4.667-3.242-8.713-7.543-9.59C94.78 8.038 86.696.436 76.89.436c-6.895 0-12.94 3.689-16.331 9.283-.084-.002-.167-.025-.252-.025-7.27 0-13.165 6.325-13.165 13.78 0 7.195 5.488 13.24 12.405 13.781z"
+      fill="url(#a)" fill-opacity=".2"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.893 52.103h40.102c7.367 0 13.369-6.189 13.369-13.544 0-6.188-4.064-11.36-9.78-13.046-.15-5.515-4.718-9.918-10.343-9.918-1.635 0-3.175.397-4.55 1.063-2.433-5.697-8.143-9.689-14.8-9.689-7.258 0-13.389 4.76-15.373 11.286-8.58 1.023-15.156 8.13-15.156 16.874 0 9.16 7.126 16.974 16.53 16.974z"
+      fill="#fff" filter="url(#b)"></path>
+    <defs>
+      <filter id="b" x=".362" y=".969" width="90.001" height="65.134" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+      <linearGradient id="a" x1="47.143" y1=".436" x2="47.143" y2="37.256" gradientUnits="userSpaceOnUse">
+        <stop stop-opacity=".01"></stop>
+        <stop offset="1" stop-opacity=".5"></stop>
+      </linearGradient>
+    </defs>
+  </symbol>
+  <symbol viewBox="0 0 70 67" fill="none" xmlns="http://www.w3.org/2000/svg" id="clear-sky-day">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M34.857 58.514l-10.633 7.958-3.929-12.695-13.274.183 4.275-12.583L.449 33.714l10.847-7.664L7.02 13.468l13.274.182L24.225.955l10.632 7.959L45.49.955l3.929 12.695 13.275-.182-4.276 12.582 10.847 7.664-10.847 7.663 4.276 12.583-13.275-.183-3.93 12.695-10.632-7.958z"
+      fill="#FCC02E"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M34.857 58.514l-10.633 7.958-3.929-12.695-13.274.183 4.275-12.583L.449 33.714l10.847-7.664L7.02 13.468l13.274.182L24.225.955l10.632 7.959L45.49.955l3.929 12.695 13.275-.182-4.276 12.582 10.847 7.664-10.847 7.663 4.276 12.583-13.275-.183-3.93 12.695-10.632-7.958z"
+      fill="url(#a)" fill-opacity=".3"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M34.857 52.717c10.484 0 18.984-8.508 18.984-19.003 0-10.496-8.5-19.004-18.984-19.004-10.484 0-18.984 8.508-18.984 19.004 0 10.495 8.5 19.003 18.984 19.003z" fill="#FEE6AC" filter="url(#b)"></path>
+    <defs>
+      <filter id="b" x="7.873" y="10.71" width="53.967" height="54.008" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="4"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+      <linearGradient id="a" x1=".449" y1=".955" x2=".449" y2="66.472" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#fff" stop-opacity=".5"></stop>
+        <stop offset="1" stop-opacity=".5"></stop>
+      </linearGradient>
+    </defs>
+  </symbol>
+  <symbol viewBox="0 0 46 63" fill="none" xmlns="http://www.w3.org/2000/svg" id="clear-sky-night">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M.387 59.964a31.653 31.653 0 0 0 13.56 3.03c17.474 0 31.64-14.093 31.64-31.476S31.42.043 13.947.043c-4.852 0-9.45 1.087-13.56 3.03 10.69 5.05 18.08 15.89 18.08 28.445 0 12.556-7.39 23.395-18.08 28.446z"
+      fill="#fff"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M.387 59.964a31.653 31.653 0 0 0 13.56 3.03c17.474 0 31.64-14.093 31.64-31.476S31.42.043 13.947.043c-4.852 0-9.45 1.087-13.56 3.03 10.69 5.05 18.08 15.89 18.08 28.445 0 12.556-7.39 23.395-18.08 28.446z"
+      fill="url(#a)" fill-opacity=".3"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M.387 59.964a31.653 31.653 0 0 0 13.56 3.03c17.474 0 31.64-14.093 31.64-31.476S31.42.043 13.947.043c-4.852 0-9.45 1.087-13.56 3.03 10.69 5.05 18.08 15.89 18.08 28.445 0 12.556-7.39 23.395-18.08 28.446z"
+      fill="#3F8AE9" fill-opacity=".5"></path>
+    <defs>
+      <linearGradient id="a" x1=".387" y1=".043" x2=".387" y2="62.993" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#fff" stop-opacity=".5"></stop>
+        <stop offset="1" stop-opacity=".5"></stop>
+      </linearGradient>
+    </defs>
+  </symbol>
+  <symbol viewBox="0 0 84 69" fill="none" xmlns="http://www.w3.org/2000/svg" id="few-clouds-day">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M55.111 49.3l-8.799 6.586-3.252-10.507-10.986.151 3.539-10.413-8.977-6.342 8.977-6.342-3.539-10.413 10.986.15 3.252-10.506 8.8 6.587 8.799-6.587 3.251 10.507 10.986-.151-3.538 10.413 8.977 6.342-8.977 6.342 3.538 10.413-10.986-.15-3.251 10.505-8.8-6.586z"
+      fill="#FCC02E"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M55.111 49.3l-8.799 6.586-3.252-10.507-10.986.151 3.539-10.413-8.977-6.342 8.977-6.342-3.539-10.413 10.986.15 3.252-10.506 8.8 6.587 8.799-6.587 3.251 10.507 10.986-.151-3.538 10.413 8.977 6.342-8.977 6.342 3.538 10.413-10.986-.15-3.251 10.505-8.8-6.586z"
+      fill="url(#a)" fill-opacity=".3"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M55.111 44.215c8.519 0 15.425-6.913 15.425-15.44 0-8.528-6.906-15.44-15.425-15.44-8.518 0-15.424 6.912-15.424 15.44 0 8.528 6.906 15.44 15.424 15.44z" fill="#FEE6AC" filter="url(#b)"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M49.153 56.093c5.245 0 9.517-4.398 9.517-9.623 0-4.398-2.893-8.072-6.961-9.27-.108-3.919-3.36-7.047-7.363-7.047-1.164 0-2.26.282-3.24.755-1.731-4.047-5.796-6.884-10.535-6.884-5.167 0-9.53 3.382-10.944 8.019C13.52 32.77 8.84 37.82 8.84 44.033c0 6.508 5.073 12.06 11.767 12.06h28.547z"
+      fill="#fff" filter="url(#c)"></path>
+    <defs>
+      <filter id="b" x="31.687" y="9.334" width="46.848" height="46.881" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="4"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+      <filter id="c" x=".839" y="20.024" width="65.832" height="48.069" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="4"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+      <linearGradient id="a" x1="26.636" y1=".269" x2="26.636" y2="54.49" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#fff" stop-opacity=".5"></stop>
+        <stop offset="1" stop-opacity=".5"></stop>
+      </linearGradient>
+    </defs>
+  </symbol>
+  <symbol viewBox="0 0 77 57" fill="none" xmlns="http://www.w3.org/2000/svg" id="few-clouds-night">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M39.75 49.538a25.684 25.684 0 0 0 11.06 2.486c14.252 0 25.806-11.566 25.806-25.833C76.616 11.923 65.063.357 50.81.357c-3.958 0-7.707.892-11.06 2.486 8.72 4.146 14.747 13.042 14.747 23.348 0 10.305-6.028 19.2-14.746 23.347z"
+      fill="#fff"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M39.75 49.538a25.684 25.684 0 0 0 11.06 2.486c14.252 0 25.806-11.566 25.806-25.833C76.616 11.923 65.063.357 50.81.357c-3.958 0-7.707.892-11.06 2.486 8.72 4.146 14.747 13.042 14.747 23.348 0 10.305-6.028 19.2-14.746 23.347z"
+      fill="url(#a)" fill-opacity=".3"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M39.75 49.538a25.684 25.684 0 0 0 11.06 2.486c14.252 0 25.806-11.566 25.806-25.833C76.616 11.923 65.063.357 50.81.357c-3.958 0-7.707.892-11.06 2.486 8.72 4.146 14.747 13.042 14.747 23.348 0 10.305-6.028 19.2-14.746 23.347z"
+      fill="#3F8AE9" fill-opacity=".5"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.606 44.897h28.547c5.245 0 9.517-4.397 9.517-9.623 0-4.397-2.893-8.072-6.961-9.27-.108-3.918-3.36-7.046-7.363-7.046-1.164 0-2.26.282-3.24.755-1.731-4.048-5.796-6.884-10.535-6.884-5.167 0-9.53 3.381-10.944 8.019-6.107.726-10.788 5.776-10.788 11.989 0 6.509 5.073 12.06 11.767 12.06z"
+      fill="#fff" filter="url(#b)"></path>
+    <defs>
+      <filter id="b" x=".839" y="8.829" width="65.832" height="48.069" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="4"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+      <linearGradient id="a" x1="39.751" y1=".357" x2="39.751" y2="52.024" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#fff" stop-opacity=".5"></stop>
+        <stop offset="1" stop-opacity=".5"></stop>
+      </linearGradient>
+    </defs>
+  </symbol>
+  <symbol viewBox="0 0 67 52" fill="none" xmlns="http://www.w3.org/2000/svg" id="mist-day">
+    <path d="M2.047 5.918C9.494 2.439 18.057.7 26.249 3.135c4.84 1.391 8.936 4.174 13.777 5.565 8.19 2.435 16.755.696 24.202-2.782" stroke="#FBFBFB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path opacity=".7" d="M2.047 19.122c7.447-3.479 16.01-5.218 24.202-2.783 4.84 1.392 8.936 4.174 13.777 5.565 8.19 2.435 16.755.696 24.202-2.782" stroke="#FBFBFB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path opacity=".4" d="M2.047 32.326c7.447-3.478 16.01-5.218 24.202-2.783 4.84 1.392 8.936 4.174 13.777 5.566 8.19 2.434 16.755.695 24.202-2.783" stroke="#FBFBFB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path opacity=".2" d="M2.047 45.53c7.447-3.478 16.01-5.217 24.202-2.782 4.84 1.39 8.936 4.173 13.777 5.565 8.19 2.434 16.755.695 24.202-2.783" stroke="#FBFBFB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+  <symbol viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" id="pressure-min">
+    <path d="M6 0C2.692 0 0 2.692 0 6s2.692 6 6 6 6-2.692 6-6-2.692-6-6-6zm0 11.5a5.508 5.508 0 0 1-5.29-4h3.558c.416.629 1.055 1 1.732 1 .678 0 1.316-.371 1.732-1h3.558a5.508 5.508 0 0 1-5.29 4zM7.593 7a.25.25 0 0 0-.215.123C7.056 7.673 6.54 8 6 8c-.541 0-1.056-.328-1.378-.877A.25.25 0 0 0 4.407 7H.593A5.506 5.506 0 0 1 6 .5 5.506 5.506 0 0 1 11.407 7H7.593z"
+      fill="#90B4CF"></path>
+    <path d="M7.823 3.573L6.335 5.062A.989.989 0 0 0 6 5a1 1 0 1 0 1 1.01.995.995 0 0 0-.247-.66l1.424-1.423a.25.25 0 0 0-.354-.354zM6 6.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm0-4.25A.25.25 0 0 0 6.25 2V1a.25.25 0 0 0-.5 0v1c0 .138.112.25.25.25zm5 3.5h-1a.25.25 0 0 0 0 .5h1a.25.25 0 1 0 0-.5zm-9 0H1a.25.25 0 0 0 0 .5h1a.25.25 0 0 0 0-.5zm2.193-3.38l-.425-.737a.25.25 0 0 0-.433.25l.425.738a.25.25 0 0 0 .435-.247l-.002-.003zm6.268 1.057a.25.25 0 0 0-.34-.093l-.004.001-.738.425a.25.25 0 0 0 .25.433l.738-.425a.25.25 0 0 0 .094-.34zm-7.837.334L2.62 3.76l-.738-.425a.25.25 0 1 0-.25.433l.738.425a.25.25 0 0 0 .253-.432zm5.947-2.219a.25.25 0 0 0-.34.091l-.424.738a.25.25 0 0 0 .433.25l.425-.738a.25.25 0 0 0-.094-.34z"
+      fill="#90B4CF"></path>
+  </symbol>
+  <symbol viewBox="0 0 105 75" fill="none" xmlns="http://www.w3.org/2000/svg" id="rain-day">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M60.172 37.805h35.032c4.966-.541 8.92-4.746 8.92-9.9 0-4.667-3.242-8.713-7.543-9.59C95.403 8.587 87.32.985 77.514.985c-6.895 0-12.94 3.69-16.33 9.283-.085-.002-.168-.025-.252-.025-7.272 0-13.166 6.325-13.166 13.781 0 7.194 5.488 13.24 12.406 13.78z"
+      fill="#B8C7D8"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M60.172 37.805h35.032c4.966-.541 8.92-4.746 8.92-9.9 0-4.667-3.242-8.713-7.543-9.59C95.403 8.587 87.32.985 77.514.985c-6.895 0-12.94 3.69-16.33 9.283-.085-.002-.168-.025-.252-.025-7.272 0-13.166 6.325-13.166 13.781 0 7.194 5.488 13.24 12.406 13.78z"
+      fill="url(#a)" fill-opacity=".2"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M27.516 52.651h40.102c7.368 0 13.369-6.189 13.369-13.543 0-6.189-4.064-11.361-9.78-13.046-.15-5.516-4.718-9.918-10.343-9.918-1.635 0-3.175.397-4.55 1.062-2.433-5.696-8.143-9.689-14.8-9.689-7.258 0-13.389 4.76-15.373 11.286-8.58 1.023-15.155 8.13-15.155 16.874 0 9.161 7.126 16.974 16.53 16.974z"
+      fill="#fff" filter="url(#b)"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M36.495 74.25c2.62 0 4.746-2.28 4.746-5.091 0-2.811-4.746-9.163-4.746-9.163s-4.746 6.352-4.746 9.163 2.125 5.09 4.746 5.09zm17.204-8.909c1.31 0 2.373-1.14 2.373-2.545 0-1.406-2.373-4.581-2.373-4.581s-2.373 3.175-2.373 4.581c0 1.406 1.062 2.545 2.373 2.545z"
+      fill="#F3F3F3"></path>
+    <defs>
+      <filter id="b" x=".986" y="1.517" width="90.001" height="65.134" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+      <linearGradient id="a" x1="47.766" y1=".985" x2="47.766" y2="37.805" gradientUnits="userSpaceOnUse">
+        <stop stop-opacity=".01"></stop>
+        <stop offset="1" stop-opacity=".5"></stop>
+      </linearGradient>
+    </defs>
+  </symbol>
+  <symbol viewBox="0 0 91 66" fill="none" xmlns="http://www.w3.org/2000/svg" id="rain-night">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.667 51.133H66.77c7.368 0 13.37-6.189 13.37-13.544 0-6.188-4.065-11.36-9.78-13.046-.151-5.515-4.719-9.917-10.344-9.917-1.635 0-3.175.396-4.55 1.062C53.032 9.991 47.322 6 40.665 6c-7.258 0-13.388 4.76-15.373 11.286-8.58 1.023-15.155 8.13-15.155 16.874 0 9.16 7.126 16.974 16.53 16.974z"
+      fill="#fff" filter="url(#a)"></path>
+    <defs>
+      <filter id="a" x=".137" y="-.001" width="90.001" height="65.134" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+    </defs>
+  </symbol>
+  <symbol viewBox="0 0 104 75" fill="none" xmlns="http://www.w3.org/2000/svg" id="scattered-clouds-night">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.679 37.778h35.033c4.965-.541 8.919-4.747 8.919-9.9 0-4.667-3.242-8.713-7.543-9.59C94.911 8.56 86.827.957 77.022.957c-6.896 0-12.94 3.69-16.332 9.283-.084-.002-.167-.025-.251-.025-7.272 0-13.166 6.325-13.166 13.78 0 7.195 5.488 13.24 12.406 13.782z"
+      fill="#2D6CB5"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.679 37.778h35.033c4.965-.541 8.919-4.747 8.919-9.9 0-4.667-3.242-8.713-7.543-9.59C94.911 8.56 86.827.957 77.022.957c-6.896 0-12.94 3.69-16.332 9.283-.084-.002-.167-.025-.251-.025-7.272 0-13.166 6.325-13.166 13.78 0 7.195 5.488 13.24 12.406 13.782z"
+      fill="url(#a)" fill-opacity=".2"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M27.023 52.624h40.102c7.368 0 13.369-6.189 13.369-13.544 0-6.188-4.064-11.36-9.78-13.046-.15-5.515-4.718-9.918-10.343-9.918-1.635 0-3.175.397-4.55 1.063-2.433-5.697-8.143-9.689-14.8-9.689-7.258 0-13.389 4.76-15.373 11.286-8.58 1.023-15.155 8.13-15.155 16.874 0 9.16 7.126 16.974 16.53 16.974z"
+      fill="#fff" filter="url(#b)"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M36.002 74.222c2.621 0 4.746-2.279 4.746-5.09 0-2.812-4.746-9.163-4.746-9.163s-4.746 6.351-4.746 9.163c0 2.811 2.125 5.09 4.746 5.09zm17.204-8.908c1.31 0 2.373-1.14 2.373-2.545 0-1.406-2.373-4.581-2.373-4.581s-2.373 3.175-2.373 4.58c0 1.406 1.062 2.546 2.373 2.546z"
+      fill="#F3F3F3"></path>
+    <defs>
+      <filter id="b" x=".493" y="1.49" width="90.001" height="65.134" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+      <linearGradient id="a" x1="47.273" y1=".958" x2="47.273" y2="37.778" gradientUnits="userSpaceOnUse">
+        <stop stop-opacity=".01"></stop>
+        <stop offset="1" stop-opacity=".5"></stop>
+      </linearGradient>
+    </defs>
+  </symbol>
+  <symbol viewBox="0 0 104 93" fill="none" xmlns="http://www.w3.org/2000/svg" id="shower-rain-day">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.186 37.26h35.033c4.965-.541 8.919-4.747 8.919-9.9 0-4.667-3.242-8.713-7.543-9.59C94.418 8.041 86.335.44 76.53.44c-6.896 0-12.94 3.689-16.331 9.283-.084-.002-.168-.025-.252-.025-7.271 0-13.165 6.325-13.165 13.78 0 7.195 5.488 13.24 12.405 13.781z"
+      fill="#B8C7D8"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.186 37.26h35.033c4.965-.541 8.919-4.747 8.919-9.9 0-4.667-3.242-8.713-7.543-9.59C94.418 8.041 86.335.44 76.53.44c-6.896 0-12.94 3.689-16.331 9.283-.084-.002-.168-.025-.252-.025-7.271 0-13.165 6.325-13.165 13.78 0 7.195 5.488 13.24 12.405 13.781z"
+      fill="url(#a)" fill-opacity=".2"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.53 52.106h40.102c7.368 0 13.37-6.189 13.37-13.544 0-6.188-4.064-11.36-9.78-13.046-.151-5.515-4.718-9.918-10.343-9.918-1.635 0-3.176.397-4.551 1.063-2.433-5.697-8.142-9.689-14.799-9.689-7.259 0-13.39 4.76-15.374 11.286C16.575 19.281 10 26.388 10 35.132c0 9.16 7.126 16.974 16.53 16.974z"
+      fill="#fff" filter="url(#b)"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M84.748 60.42c2.621 0 4.746-2.279 4.746-5.09s-4.746-9.163-4.746-9.163-4.746 6.352-4.746 9.163 2.125 5.09 4.746 5.09zM23.645 80.612c2.62 0 4.745-2.28 4.745-5.09 0-2.812-4.745-9.163-4.745-9.163s-4.746 6.351-4.746 9.163c0 2.81 2.124 5.09 4.745 5.09zM48.56 64.796c1.311 0 2.373-1.14 2.373-2.545 0-1.406-2.373-4.582-2.373-4.582s-2.373 3.176-2.373 4.582c0 1.405 1.063 2.545 2.373 2.545z"
+      fill="#F5F5F5"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M90.087 92.114c1.31 0 2.373-1.14 2.373-2.545 0-1.406-2.373-4.582-2.373-4.582s-2.373 3.176-2.373 4.582c0 1.405 1.063 2.545 2.373 2.545z" fill="#F1F1F1"></path>
+    <defs>
+      <filter id="b" x="0" y=".972" width="90.001" height="65.134" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+      <linearGradient id="a" x1="46.781" y1=".439" x2="46.781" y2="37.259" gradientUnits="userSpaceOnUse">
+        <stop stop-opacity=".01"></stop>
+        <stop offset="1" stop-opacity=".5"></stop>
+      </linearGradient>
+    </defs>
+  </symbol>
+  <symbol viewBox="0 0 104 93" fill="none" xmlns="http://www.w3.org/2000/svg" id="shower-rain-night">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.186 37.244h35.033c4.965-.54 8.919-4.746 8.919-9.9 0-4.666-3.242-8.712-7.543-9.59C94.418 8.027 86.335.424 76.53.424c-6.896 0-12.94 3.69-16.331 9.284-.084-.002-.168-.025-.252-.025-7.271 0-13.165 6.325-13.165 13.78 0 7.194 5.488 13.24 12.405 13.781z"
+      fill="#2D6CB5"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.186 37.244h35.033c4.965-.54 8.919-4.746 8.919-9.9 0-4.666-3.242-8.712-7.543-9.59C94.418 8.027 86.335.424 76.53.424c-6.896 0-12.94 3.69-16.331 9.284-.084-.002-.168-.025-.252-.025-7.271 0-13.165 6.325-13.165 13.78 0 7.194 5.488 13.24 12.405 13.781z"
+      fill="url(#a)" fill-opacity=".2"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.53 52.09h40.102c7.368 0 13.37-6.188 13.37-13.543 0-6.189-4.064-11.36-9.78-13.046-.151-5.515-4.718-9.918-10.343-9.918-1.635 0-3.176.397-4.551 1.063-2.433-5.697-8.142-9.69-14.799-9.69-7.259 0-13.39 4.76-15.374 11.287C16.575 19.266 10 26.373 10 35.117c0 9.16 7.126 16.974 16.53 16.974z"
+      fill="#fff" filter="url(#b)"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M84.748 60.405c2.621 0 4.746-2.279 4.746-5.09s-4.746-9.163-4.746-9.163-4.746 6.352-4.746 9.163 2.125 5.09 4.746 5.09zM23.645 80.597c2.62 0 4.745-2.28 4.745-5.09 0-2.812-4.745-9.163-4.745-9.163s-4.746 6.351-4.746 9.162c0 2.812 2.124 5.09 4.745 5.09zM48.56 64.78c1.311 0 2.373-1.139 2.373-2.544 0-1.406-2.373-4.582-2.373-4.582s-2.373 3.176-2.373 4.581c0 1.406 1.063 2.546 2.373 2.546z"
+      fill="#F5F5F5"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M90.087 92.099c1.31 0 2.373-1.14 2.373-2.546 0-1.405-2.373-4.58-2.373-4.58s-2.373 3.175-2.373 4.58c0 1.406 1.063 2.546 2.373 2.546z" fill="#F1F1F1"></path>
+    <defs>
+      <filter id="b" x="0" y=".957" width="90.001" height="65.134" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+      <linearGradient id="a" x1="46.781" y1=".424" x2="46.781" y2="37.244" gradientUnits="userSpaceOnUse">
+        <stop stop-opacity=".01"></stop>
+        <stop offset="1" stop-opacity=".5"></stop>
+      </linearGradient>
+    </defs>
+  </symbol>
+  <symbol viewBox="0 0 104 91" fill="none" xmlns="http://www.w3.org/2000/svg" id="snow-day-1">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.505 37.741h35.033c4.965-.54 8.919-4.746 8.919-9.9 0-4.666-3.242-8.712-7.543-9.59C94.737 8.524 86.653.92 76.848.92c-6.896 0-12.94 3.69-16.332 9.284-.084-.002-.167-.025-.251-.025-7.271 0-13.165 6.325-13.165 13.78 0 7.194 5.487 13.24 12.405 13.781z"
+      fill="#2D6CB5"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.505 37.741h35.033c4.965-.54 8.919-4.746 8.919-9.9 0-4.666-3.242-8.712-7.543-9.59C94.737 8.524 86.653.92 76.848.92c-6.896 0-12.94 3.69-16.332 9.284-.084-.002-.167-.025-.251-.025-7.271 0-13.165 6.325-13.165 13.78 0 7.194 5.487 13.24 12.405 13.781z"
+      fill="url(#a)" fill-opacity=".2"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.85 52.588h40.1c7.368 0 13.37-6.19 13.37-13.544 0-6.189-4.065-11.36-9.78-13.046-.151-5.515-4.718-9.918-10.344-9.918-1.635 0-3.175.397-4.55 1.063-2.433-5.697-8.142-9.69-14.8-9.69-7.258 0-13.388 4.76-15.373 11.287-8.58 1.023-15.155 8.13-15.155 16.874 0 9.16 7.126 16.974 16.53 16.974z"
+      fill="#fff" filter="url(#b)"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M84.819 60.921a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm-61 21a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm66 9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm-41-27a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" fill="#fff"></path>
+    <defs>
+      <filter id="b" x=".319" y="1.454" width="90.001" height="65.134" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+      <linearGradient id="a" x1="47.1" y1=".921" x2="47.1" y2="37.741" gradientUnits="userSpaceOnUse">
+        <stop stop-opacity=".01"></stop>
+        <stop offset="1" stop-opacity=".5"></stop>
+      </linearGradient>
+    </defs>
+  </symbol>
+  <symbol viewBox="0 0 104 91" fill="none" xmlns="http://www.w3.org/2000/svg" id="snow-day">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.505 37.741h35.033c4.965-.54 8.919-4.746 8.919-9.9 0-4.666-3.242-8.712-7.543-9.59C94.737 8.524 86.653.92 76.848.92c-6.896 0-12.94 3.69-16.332 9.284-.084-.002-.167-.025-.251-.025-7.271 0-13.165 6.325-13.165 13.78 0 7.194 5.487 13.24 12.405 13.781z"
+      fill="#B6D6FA"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.505 37.741h35.033c4.965-.54 8.919-4.746 8.919-9.9 0-4.666-3.242-8.712-7.543-9.59C94.737 8.524 86.653.92 76.848.92c-6.896 0-12.94 3.69-16.332 9.284-.084-.002-.167-.025-.251-.025-7.271 0-13.165 6.325-13.165 13.78 0 7.194 5.487 13.24 12.405 13.781z"
+      fill="url(#a)" fill-opacity=".1"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.85 52.588h40.1c7.368 0 13.37-6.19 13.37-13.544 0-6.189-4.065-11.36-9.78-13.046-.151-5.515-4.718-9.918-10.344-9.918-1.635 0-3.175.397-4.55 1.063-2.433-5.697-8.142-9.69-14.8-9.69-7.258 0-13.388 4.76-15.373 11.287-8.58 1.023-15.155 8.13-15.155 16.874 0 9.16 7.126 16.974 16.53 16.974z"
+      fill="#fff" filter="url(#b)"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M84.819 60.921a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm-61 21a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm66 9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm-41-27a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" fill="#fff"></path>
+    <defs>
+      <filter id="b" x=".319" y="1.454" width="90.001" height="65.134" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+      <linearGradient id="a" x1="47.1" y1=".921" x2="47.1" y2="37.741" gradientUnits="userSpaceOnUse">
+        <stop stop-opacity=".01"></stop>
+        <stop offset="1" stop-opacity=".5"></stop>
+      </linearGradient>
+    </defs>
+  </symbol>
+  <symbol viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" id="thunderstorm-day">
+    <path d="M9.652 1.565a2.35 2.35 0 0 0-2.348 2.348.26.26 0 1 0 .522 0c0-1.007.82-1.826 1.826-1.826 1.007 0 1.826.82 1.826 1.826 0 1.007-.82 1.826-1.826 1.826H.261a.261.261 0 0 0 0 .522h9.391A2.35 2.35 0 0 0 12 3.913a2.35 2.35 0 0 0-2.348-2.348z" fill="#90B4CF"></path>
+    <path d="M4.696 1.043c-1.007 0-1.826.82-1.826 1.827a.261.261 0 0 0 .521 0A1.306 1.306 0 0 1 6 2.87c0 .719-.585 1.304-1.304 1.304H.26a.261.261 0 0 0 0 .522h4.435c1.007 0 1.826-.82 1.826-1.826a1.83 1.83 0 0 0-1.826-1.827zM9.13 7.304H.26a.261.261 0 0 0 0 .522h8.87c.72 0 1.305.585 1.305 1.304a1.306 1.306 0 0 1-2.609 0 .26.26 0 1 0-.522 0c0 1.007.82 1.826 1.826 1.826a1.828 1.828 0 0 0 1.826-1.826A1.828 1.828 0 0 0 9.13 7.304z"
+      fill="#90B4CF"></path>
+  </symbol>
+</svg>

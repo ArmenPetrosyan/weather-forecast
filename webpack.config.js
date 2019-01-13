@@ -49,12 +49,36 @@ module.exports = {
         exclude: '/node_modules/',
       },
       {
-        test: /\.(png|jpg|svg)$/i,
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+          {
+            loader: 'react-svg-loader',
+            options: {
+              jsx: true, // true outputs JSX tags
+              svgo: {
+                plugins: [
+                  {
+                    removeTitle: true,
+                    removeAttrs: ['fill'],
+                  },
+                ],
+                floatPrecision: 2,
+              },
+            },
+          },
+        ],
+        exclude: '/node_modules/',
+      },
+      {
+        test: /\.(png|jpg)$/i,
         use: [
           {
             loader: 'url-loader',
             options: {
-              limit: 8192,
+              limit: 1024,
             },
           },
         ],
@@ -76,7 +100,14 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     hot: true,
+    host: 'arnie.site',
     port: 9000,
+    proxy: {
+      '/weather': {
+        target: 'http://arnie.site:9000',
+        pathRewrite: { '^/weather': '' },
+      },
+    },
   },
   devtool: (env === 'development') ? 'source-map' : null,
 };
