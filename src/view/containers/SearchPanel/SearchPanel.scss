@@ -1,4 +1,12 @@
 .SearchPanel {
   background: #F9FCFF;
   padding: 10px 0;
+
+  [class *= "PlacesAutocomplete--"] {
+    flex-grow: 2;
+  }
+
+  [class *= ".WeatherWidget--"] {
+    flex-grow: 1;
+  }
 }

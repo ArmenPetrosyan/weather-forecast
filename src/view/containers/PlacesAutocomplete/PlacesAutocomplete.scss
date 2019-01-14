@@ -1,0 +1,29 @@
+.PlacesAutocomplete {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  &--icon {
+    fill: #9AB4CB;
+  }
+
+  &--input {
+    background: transparent;
+    min-height: 60px;
+    border: none;
+    color: #9AB4CB;
+    font-size: 18px;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    padding: 0 20px;
+
+    &:focus {
+      color: #5584FF;
+
+      & + .PlacesAutocomplete--icon {
+        fill: #5584FF;
+      }
+    }
+  }
+}

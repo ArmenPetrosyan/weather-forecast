@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { WeatherWidget } from 'Components';
 import base from 'Root/App.scss';
 import styles from './SearchPanel.scss';
+import PlacesAutocomplete from './../PlacesAutocomplete';
 
 class SearchPanel extends React.Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class SearchPanel extends React.Component {
     return (
       <section className={styles.SearchPanel}>
         <div className={base.Container}>
-          <input type="text"/>
+          <PlacesAutocomplete />
           <WeatherWidget />
         </div>
       </section>
