@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { setLocation } from '../../../actions/locationActions';
 import styles from './PlacesAutocomplete.scss';
 import './monoicons/search.svg';
 import { Icon } from 'Components';
@@ -8,10 +10,13 @@ class PlacesAutocomplete extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      query: '',
+      query: props.location || '',
     };
 
     this.placeChangeHandler = this.placeChangeHandler.bind(this);
+    this.placeSubmitHandler = this.placeSubmitHandler.bind(this);
+
+    this.placesInput = React.createRef();
   }
 
   placeChangeHandler({ target }) {
@@ -20,27 +25,54 @@ class PlacesAutocomplete extends React.Component {
     });
   }
 
+  placeSubmitHandler(event) {
+    event.preventDefault();
+    const { changePlace } = this.props;
+    const currentPlace = this.placesInput.current.value;
+    changePlace(currentPlace);
+  }
+
   render() {
     const { query } = this.state;
 
     return (
       <div className={styles.PlacesAutocomplete}>
-        <input
-          className={styles['PlacesAutocomplete--input']}
-          type="text"
-          value={query}
-          onChange={this.placeChangeHandler}
-          autoFocus // eslint-disable-line
-        />
-        <Icon
-          className={styles['PlacesAutocomplete--icon']}
-          icon="search"
-          height={26}
-          width={29}
-        />
+        <form
+          action="#"
+          className={styles['PlacesAutocomplete--form']}
+          onSubmit={this.placeSubmitHandler}
+        >
+          <input
+            className={styles['PlacesAutocomplete--input']}
+            type="text"
+            ref={this.placesInput}
+            value={query}
+            onChange={this.placeChangeHandler}
+            autoFocus // eslint-disable-line
+          />
+          <Icon
+            className={styles['PlacesAutocomplete--icon']}
+            icon="search"
+            height={26}
+            width={29}
+          />
+        </form>
       </div>
     );
   }
 }
 
-export default PlacesAutocomplete;
+PlacesAutocomplete.propTypes = {
+  changePlace: PropTypes.func.isRequired,
+  location: PropTypes.string.isRequired,
+};
+
+const mapStateToProps = state => ({
+  location: state.location.city,
+});
+
+const mapDispatchToProps = dispatch => ({
+  changePlace: (newLocation) => { dispatch(setLocation(newLocation)); },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(PlacesAutocomplete);

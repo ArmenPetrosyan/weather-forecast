@@ -1,10 +1,13 @@
 .PlacesAutocomplete {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-
   &--icon {
     fill: #9AB4CB;
+  }
+
+  &--form {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
   }
 
   &--input {
@@ -15,7 +18,6 @@
     font-size: 18px;
     outline: none;
     font-family: 'Open Sans', sans-serif;
-    width: 100%;
     padding: 0 20px;
 
     &:focus {

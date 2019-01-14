@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import i18n from '../../../i18n';
 import styles from './LocaleSwitcher.scss';
 import languages from '../../../languages';
