@@ -12,6 +12,11 @@ class LocaleSwitcher extends React.Component {
     this.onLocaleChange = this.onLocaleChange.bind(this);
   }
 
+  static propTypes = {
+    locale: PropTypes.string.isRequired,
+    changeLocale: PropTypes.func.isRequired,
+  }
+
   onLocaleChange({ target }) {
     const { changeLocale } = this.props; // eslint-ignore-line
     const locale = target.value;
@@ -46,11 +51,6 @@ class LocaleSwitcher extends React.Component {
     );
   }
 }
-
-LocaleSwitcher.propTypes = {
-  locale: PropTypes.string.isRequired,
-  changeLocale: PropTypes.func.isRequired,
-};
 
 const mapStateToProps = state => ({
   locale: state.root.locale,

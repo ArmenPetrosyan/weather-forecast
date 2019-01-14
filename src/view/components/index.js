@@ -2,7 +2,7 @@ import DateWidget from './DateWidget';
 import LocaleSwitcher from './LocaleSwitcher';
 import LocationWidget from './LocationWidget';
 import WeatherWidget from './WeatherWidget';
-import Icon from './Icon/Icon.jsx';
+import Icon from './Icon.jsx';
 
 export {
   DateWidget,

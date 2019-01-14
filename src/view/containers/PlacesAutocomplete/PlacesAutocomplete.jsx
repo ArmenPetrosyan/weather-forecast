@@ -19,6 +19,11 @@ class PlacesAutocomplete extends React.Component {
     this.placesInput = React.createRef();
   }
 
+  static propTypes = {
+    changePlace: PropTypes.func.isRequired,
+    location: PropTypes.string.isRequired,
+  }
+
   placeChangeHandler({ target }) {
     this.setState({
       query: target.value,
@@ -61,11 +66,6 @@ class PlacesAutocomplete extends React.Component {
     );
   }
 }
-
-PlacesAutocomplete.propTypes = {
-  changePlace: PropTypes.func.isRequired,
-  location: PropTypes.string.isRequired,
-};
 
 const mapStateToProps = state => ({
   location: state.location.city,
