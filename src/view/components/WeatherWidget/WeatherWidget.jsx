@@ -53,8 +53,8 @@ const WeatherWidget = (props) => {
     <div className={styles.WeatherWidget}>
       <div className={styles['WeatherWidget--data']}>
         <div className={styles['WeatherWidget--temp']}>-15°C</div>
-        <WeatherBadge icon="pressure-min" data="1500 hpa" />
-        <WeatherBadge icon="wind-mini" data={`15 ${t('m/s')}`} />
+        <WeatherBadge icon="pressure" data="1500 hpa" />
+        <WeatherBadge icon="wind" data={`15 ${t('m/s')}`} />
       </div>
       <div className={styles['WeatherWidget--icon']}>
         <Icon icon="clear-sky-day" width={104} height={91} />
