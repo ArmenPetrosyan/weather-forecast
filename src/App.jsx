@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import Header from 'View/containers/Header';
 import SearchPanel from 'View/containers/SearchPanel';
 import Footer from 'View/containers/Footer';
+import Weekly from 'View/containers/Weekly';
 import store from './store';
 
 import './reset.css';
@@ -26,7 +27,7 @@ class App extends Component {
         <div className={styles.App}>
           <Header />
           <SearchPanel />
-          <main className={styles.Main}></main>
+          <Weekly />
           <Footer />
         </div>
       </Provider>

@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { setLocation } from '../../../actions/locationActions';
-import styles from './PlacesAutocomplete.scss';
+import styles from './SearchField.scss';
 import './monoicons/search.svg';
 import { Icon } from 'Components';
 
-class PlacesAutocomplete extends React.Component {
+class SearchField extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -41,14 +41,14 @@ class PlacesAutocomplete extends React.Component {
     const { query } = this.state;
 
     return (
-      <div className={styles.PlacesAutocomplete}>
+      <div className={styles.SearchField}>
         <form
           action="#"
-          className={styles['PlacesAutocomplete--form']}
+          className={styles['SearchField--form']}
           onSubmit={this.placeSubmitHandler}
         >
           <input
-            className={styles['PlacesAutocomplete--input']}
+            className={styles['SearchField--input']}
             type="text"
             ref={this.placesInput}
             value={query}
@@ -56,7 +56,7 @@ class PlacesAutocomplete extends React.Component {
             autoFocus // eslint-disable-line
           />
           <Icon
-            className={styles['PlacesAutocomplete--icon']}
+            className={styles['SearchField--icon']}
             icon="search"
             height={26}
             width={29}
@@ -75,4 +75,4 @@ const mapDispatchToProps = dispatch => ({
   changePlace: (newLocation) => { dispatch(setLocation(newLocation)); },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(PlacesAutocomplete);
+export default connect(mapStateToProps, mapDispatchToProps)(SearchField);

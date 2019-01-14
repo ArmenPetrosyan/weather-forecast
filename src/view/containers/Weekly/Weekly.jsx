@@ -20,7 +20,7 @@ class Weekly extends React.Component {
     const { t } = this.props;
 
     return (
-      <section className={styles.Weekly}>
+      <section className={`${styles.Weekly} ${base.Main}`}>
         <div className={base.Container}>
           <h2 className={styles['Weekly--heading']}>{ t('Weekly forecast') }</h2>
         </div>

@@ -1,10 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { WeatherWidget, LocationWidget } from 'Components';
-import PlacesAutocomplete from './../PlacesAutocomplete';
+import SearchField from './../SearchField';
 import base from 'Root/App.scss';
 import styles from './SearchPanel.scss';
 import { getInstantWeather } from 'Root/actions/weatherActions';
+import {
+  getCurrentTemperature,
+  getCurrentWind,
+  getCurrentPressure
+} from 'Root/selectors/weatherSelectors';
 
 class SearchPanel extends React.Component {
   constructor(props) {
@@ -15,13 +20,17 @@ class SearchPanel extends React.Component {
   }
 
   render() {
-    const { location } = this.props;
+    const { location, currentTemp, currentWind, currentPressure } = this.props;
 
     return (
       <section className={styles.SearchPanel}>
         <div className={base.Container}>
-          <PlacesAutocomplete />
-          <WeatherWidget />
+          <SearchField />
+          <WeatherWidget
+            temperature={currentTemp}
+            wind={currentWind}
+            pressure={currentPressure}
+          />
           <LocationWidget city={location} />
         </div>
       </section>
@@ -31,6 +40,9 @@ class SearchPanel extends React.Component {
 
 const mapStateToProps = state => ({
   location: state.location.city,
+  currentTemp: getCurrentTemperature(state),
+  currentWind: getCurrentWind(state),
+  currentPressure: getCurrentPressure(state),
 });
 
 const mapDispatchToProps = dispatch => ({
