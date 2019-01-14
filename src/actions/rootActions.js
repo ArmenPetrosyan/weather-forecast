@@ -1,4 +1,4 @@
-const setLocale = newLocale => ({ type: 'SET_LOCALE', data: { locale: newLocale } });
+const setLocale = newLocale => ({ type: 'SET_LOCALE', payload: { locale: newLocale } });
 
 export {
   setLocale,

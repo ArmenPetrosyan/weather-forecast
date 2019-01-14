@@ -4,13 +4,13 @@ const defaultState = {
 };
 
 const rootReducer = (state = defaultState, action) => {
-  const { type, data } = action;
+  const { type, payload } = action;
 
   switch (type) {
     case 'SET_LOCALE': {
       return {
         ...state,
-        locale: data.locale,
+        locale: payload.locale,
       };
     }
     default: {

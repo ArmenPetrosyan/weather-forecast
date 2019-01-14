@@ -11,11 +11,10 @@ import OpenWeatherMapImage from './images/OpenWeatherMap.svg';
 class Footer extends React.Component {
   static propTypes = {
     t: PropTypes.func.isRequired,
-    locale: PropTypes.string.isRequired,
   };
 
   render() {
-    const { t, locale } = this.props;
+    const { t } = this.props;
     return (
       <footer className={styles.Footer}>
         <div className={base.Container}>
@@ -23,17 +22,13 @@ class Footer extends React.Component {
             <span className={styles['Footer--copyright-text']}>
               {t('© 2018 Armen Petrosian. Data provided by')}
             </span>
-            < OpenWeatherMapImage fill="red" className={styles['Footer--copyright-image']} />
+            < OpenWeatherMapImage className={styles['Footer--copyright-image']} />
           </div>
-          <LocaleSwitcher locale={locale} />
+          <LocaleSwitcher/>
         </div>
       </footer>
     );
   }
 }
 
-const mapStateToProps = state => ({
-  locale: state.locale,
-});
-
-export default connect(mapStateToProps)(withNamespaces()(Footer));
+export default withNamespaces()(Footer);

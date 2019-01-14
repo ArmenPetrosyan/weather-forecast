@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux'
 import i18n from '../../../i18n';
 import styles from './LocaleSwitcher.scss';
@@ -12,11 +13,11 @@ class LocaleSwitcher extends React.Component {
   }
 
   onLocaleChange({ target }) {
-    const { setLocale } = this.props; // eslint-ignore-line
+    const { changeLocale } = this.props; // eslint-ignore-line
     const locale = target.value;
     i18n.changeLanguage(locale);
-    setLocale(locale);
-  };
+    changeLocale(locale);
+  }
 
   render() {
     const locales = Object.keys(languages);
@@ -38,20 +39,25 @@ class LocaleSwitcher extends React.Component {
               >
                 { value }
               </button>
-            )
+            );
           })
         }
       </nav>
-    )
-  };
+    );
+  }
 }
 
+LocaleSwitcher.propTypes = {
+  locale: PropTypes.string.isRequired,
+  changeLocale: PropTypes.func.isRequired,
+};
+
 const mapStateToProps = state => ({
-  locale: state.locale,
+  locale: state.root.locale,
 });
 
 const mapDispatchToProps = dispatch => ({
-  setLocale: (locale) => { dispatch(setLocale(locale)); }
+  changeLocale: (locale) => { dispatch(setLocale(locale)); },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(LocaleSwitcher);
