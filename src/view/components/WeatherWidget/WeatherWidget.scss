@@ -2,6 +2,8 @@
   font-family: 'Open Sans', sans-serif;
   display: flex;
   align-items: center;
+  flex-grow: 1;
+  flex-basis: 400px;
 
   &--data {
     position: relative;

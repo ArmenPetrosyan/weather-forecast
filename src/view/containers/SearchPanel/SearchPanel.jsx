@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { WeatherWidget } from 'Components';
+import { WeatherWidget, LocationWidget } from 'Components';
+import PlacesAutocomplete from './../PlacesAutocomplete';
 import base from 'Root/App.scss';
 import styles from './SearchPanel.scss';
-import PlacesAutocomplete from './../PlacesAutocomplete';
 
 class SearchPanel extends React.Component {
   constructor(props) {
@@ -11,15 +11,22 @@ class SearchPanel extends React.Component {
   }
 
   render() {
+    const { location } = this.props;
+
     return (
       <section className={styles.SearchPanel}>
         <div className={base.Container}>
           <PlacesAutocomplete />
           <WeatherWidget />
+          <LocationWidget city={location} />
         </div>
       </section>
     );
   }
 }
 
-export default connect()(SearchPanel);
+const mapStateToProps = state => ({
+  location: state.location.city,
+});
+
+export default connect(mapStateToProps)(SearchPanel);
