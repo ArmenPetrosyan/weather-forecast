@@ -3,15 +3,16 @@ import { connect } from 'react-redux'
 import i18n from '../../../i18n';
 import styles from './LocaleSwitcher.scss';
 import languages from '../../../languages';
-import { setLocale } from '../../../actions/userActions';
+import { setLocale } from '../../../actions/rootActions';
 
 class LocaleSwitcher extends React.Component {
   constructor(props) {
     super(props);
+    this.onLocaleChange = this.onLocaleChange.bind(this);
   }
 
-  onLocaleChange = ({ target }) => {
-    const { setLocale } = this.props;
+  onLocaleChange({ target }) {
+    const { setLocale } = this.props; // eslint-ignore-line
     const locale = target.value;
     i18n.changeLanguage(locale);
     setLocale(locale);
@@ -46,11 +47,11 @@ class LocaleSwitcher extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  locale: state.locale
+  locale: state.locale,
 });
 
 const mapDispatchToProps = dispatch => ({
-  setLocale: locale => { dispatch(setLocale(locale)) }
+  setLocale: (locale) => { dispatch(setLocale(locale)); }
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(LocaleSwitcher);
