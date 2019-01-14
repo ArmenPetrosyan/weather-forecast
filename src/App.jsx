@@ -26,6 +26,7 @@ class App extends Component {
         <div className={styles.App}>
           <Header />
           <SearchPanel />
+          <main className={styles.Main}></main>
           <Footer />
         </div>
       </Provider>
