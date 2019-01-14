@@ -23,11 +23,7 @@ class Footer extends React.Component {
             <span className={styles['Footer--copyright-text']}>
               {t('© 2018 Armen Petrosian. Data provided by')}
             </span>
-            <img
-              src={OpenWeatherMapImage}
-              alt="OpenWeatherMap"
-              className={styles['Footer--copyright-image']}
-            />
+            < OpenWeatherMapImage fill="red" className={styles['Footer--copyright-image']} />
           </div>
           <LocaleSwitcher locale={locale} />
         </div>
