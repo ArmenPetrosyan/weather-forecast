@@ -1,19 +1,42 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withNamespaces } from 'react-i18next';
-import styles from './WeatherWidget.scss';
-import WeatherIconsSprite from './icons/sprite.svg';
-import ClearSkyNightIcon from './icons/snow-day.svg';
-import pressureIcon from './icons/pressure-min.svg';
-import windIcon from './icons/wind-mini.svg';
-
 import { Icon } from 'Components';
 
+import styles from './WeatherWidget.scss';
+
+import './monoicons/pressure.svg';
+import './monoicons/wind.svg';
+
+import './icons/broken-clouds-day.svg';
+import './icons/broken-clouds-night.svg';
+import './icons/clear-sky-day.svg';
+import './icons/clear-sky-night.svg';
+import './icons/few-clouds-day.svg';
+import './icons/few-clouds-night.svg';
+import './icons/mist-day.svg';
+import './icons/rain-day.svg';
+import './icons/rain-night.svg';
+import './icons/scattered-clouds-night.svg';
+import './icons/shower-rain-day.svg';
+import './icons/shower-rain-night.svg';
+import './icons/snow-day.svg';
+import './icons/snow-day-1.svg';
+import './icons/thunderstorm-day.svg';
+import './icons/thunderstorm-night.svg';
+
+
 const WeatherBadge = (props) => {
-  const { icon, data } = props;
+  const { icon, data, ...rest } = props;
   return (
     <div className={styles['WeatherWidget--badge']}>
-      <img className={styles['WeatherWidget--badge-icon']} src={icon} alt="" />
+      <Icon
+        className={styles['WeatherWidget--badge-icon']}
+        icon={icon}
+        width={16}
+        height={16}
+        {...rest}
+      />
       <span className={styles['WeatherWidget--badge-data']}>{data}</span>
     </div>
   );
@@ -30,12 +53,11 @@ const WeatherWidget = (props) => {
     <div className={styles.WeatherWidget}>
       <div className={styles['WeatherWidget--data']}>
         <div className={styles['WeatherWidget--temp']}>-15°C</div>
-        <WeatherBadge icon={pressureIcon} data="1500 hpa" />
-        <WeatherBadge icon={windIcon} data={`15 ${t('m/s')}`} />
+        <WeatherBadge icon="pressure-min" data="1500 hpa" />
+        <WeatherBadge icon="wind-mini" data={`15 ${t('m/s')}`} />
       </div>
       <div className={styles['WeatherWidget--icon']}>
-        <ClearSkyNightIcon />
-        <Icon icon="snow-day" width={104} height={91} />
+        <Icon icon="clear-sky-day" width={104} height={91} />
       </div>
     </div>
   );

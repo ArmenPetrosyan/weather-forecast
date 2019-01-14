@@ -5,6 +5,37 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const env = process.env.NODE_ENV || 'development';
 
+/**
+ * Settings for SVGO (svg optimizition plugin)
+ * @param mode
+ * @returns {{plugins: *[]}}
+ */
+const getSVGOOptions = (mode) => {
+  const isMono = mode === 'monoicons';
+  return {
+    plugins: [
+      { cleanupIDs: true },
+      { cleanupAttrs: true },
+      { removeDoctype: true },
+      { removeComments: true },
+      { removeMetadata: true },
+      { removeTitle: true },
+      { removeDesc: true },
+      { removeUselessDefs: true },
+      { removeXMLNS: true },
+      { removeEditorsNSData: true },
+      { removeEmptyAttrs: true },
+      { removeHiddenElems: true },
+      { removeEmptyText: true },
+      { removeUnusedNS: true },
+      { collapseGroups: true },
+      { removeDimensions: true },
+      { removeStyleElement: false },
+      { removeAttrs: isMono && { attrs: '(fill)' } },
+    ],
+  };
+};
+
 module.exports = {
   mode: env,
   entry: {
@@ -49,7 +80,37 @@ module.exports = {
         exclude: '/node_modules/',
       },
       {
-        test: /\.svg$/,
+        test: /\/icons\/.*\.svg$/,
+        use: [
+          {
+            loader: 'svg-sprite-loader',
+            options: {
+              extract: false,
+            },
+          },
+          {
+            loader: 'svgo-loader',
+            options: getSVGOOptions(null),
+          },
+        ],
+      },
+      {
+        test: /\/monoicons\/.*\.svg$/,
+        use: [
+          {
+            loader: 'svg-sprite-loader',
+            options: {
+              extract: false,
+            },
+          },
+          {
+            loader: 'svgo-loader',
+            options: getSVGOOptions('monoicons'),
+          },
+        ],
+      },
+      {
+        test: /\/images\/.*\.svg$/,
         use: [
           {
             loader: 'babel-loader',
@@ -57,12 +118,10 @@ module.exports = {
           {
             loader: 'react-svg-loader',
             options: {
-              jsx: true, // true outputs JSX tags
               svgo: {
                 plugins: [
                   {
                     removeTitle: true,
-                    removeAttrs: ['fill'],
                   },
                 ],
                 floatPrecision: 2,
