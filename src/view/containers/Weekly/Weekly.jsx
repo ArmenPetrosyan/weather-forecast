@@ -31,7 +31,7 @@ class Weekly extends React.Component {
             { t('Weekly forecast') }
           </h2>
         </div>
-        <div className={base.Container}>
+        <div className={`${base.Container} ${styles['Weekly--container']}`}>
           {
             forecast.map((day, index) => {
               console.log(day);

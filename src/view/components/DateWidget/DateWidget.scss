@@ -6,6 +6,10 @@
     font-weight: 700;
     color: #3B4F5E;
     text-transform: capitalize;
+
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
   }
 
   &--subtitle {

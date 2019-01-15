@@ -1,6 +1,11 @@
 .Weekly {
   padding-top: 40px;
 
+  &--container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   &--heading {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 16px;
