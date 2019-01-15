@@ -6,10 +6,15 @@ const getInstantWeather = (cityName = 'kyiv') => {
     let result = null;
     try {
       result = await getWeatherByCity(cityName);
+
+      if (result.cod === '404') {
+        dispatch({ type: 'GET_INSTANT_WEATHER_FAILED', payload: { fetch: false, error: result } });
+      } else {
+        dispatch({ type: 'GET_INSTANT_WEATHER_SUCCESS', payload: { weather: result, fetch: false } });
+      }
     } catch (e) {
-      dispatch({ type: 'GET_INSTANT_WEATHER_FAILED', payload: { weather: result, fetch: false, error: e } });
+      dispatch({ type: 'GET_INSTANT_WEATHER_FAILED', payload: { fetch: false, error: e } });
     }
-    dispatch({ type: 'GET_INSTANT_WEATHER_SUCCESS', payload: { weather: result, fetch: false } });
   };
 };
 
