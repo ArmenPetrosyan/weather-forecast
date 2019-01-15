@@ -17,7 +17,7 @@ const rootReducer = (state = defaultState, action) => {
     case 'ADD_QUERY': {
       return {
         ...state,
-        queries: [...state.queries, payload.query],
+        queries: [payload.query, ...state.queries],
       };
     }
     default: {

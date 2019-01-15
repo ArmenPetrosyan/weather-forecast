@@ -57,7 +57,9 @@ class SearchField extends React.Component {
             ref={this.placesInput}
             value={query}
             onChange={this.placeChangeHandler}
+            pattern="^[\w-\s]+$"
             autoFocus // eslint-disable-line
+            required
           />
           <Icon
             className={styles['SearchField--icon']}
