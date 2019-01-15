@@ -57,7 +57,7 @@ class SearchField extends React.Component {
             ref={this.placesInput}
             value={query}
             onChange={this.placeChangeHandler}
-            pattern="^[\w-\s]+$"
+            pattern="^[a-zA-Zа-яА-Я-\s]+$"
             autoFocus // eslint-disable-line
             required
           />

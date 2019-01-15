@@ -11,6 +11,11 @@ const defaultState = {
       main: '',
     },
   ],
+  forecast: {
+    list: [],
+  },
+  fetch: false,
+  error: null,
 };
 
 const weatherReducer = (state = defaultState, action) => {
@@ -21,6 +26,18 @@ const weatherReducer = (state = defaultState, action) => {
       return {
         ...state,
         ...payload.weather,
+      };
+    }
+    case 'GET_INSTANT_WEATHER_FAILED': {
+      return {
+        ...state,
+        ...payload,
+      };
+    }
+    case 'GET_FORECAST_WEATHER_SUCCESS': {
+      return {
+        ...state,
+        forecast: payload.forecast,
       };
     }
     default: {

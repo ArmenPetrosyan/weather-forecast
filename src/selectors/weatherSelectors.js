@@ -17,9 +17,24 @@ const getWeatherIcon = (state) => {
   }
 };
 
+const getFilteredForecast = (state) => {
+  const forecastFromState = state.weather.forecast.list;
+  return forecastFromState.map(forecastObject => (
+    {
+      date: new Date(forecastObject.dt * 1000),
+      temperature: Math.round(forecastObject.main.temp),
+      wind: Math.round(forecastObject.wind.speed),
+      min: Math.round(forecastObject.main.temp_min),
+      max: Math.round(forecastObject.main.temp_max),
+      pressure: Math.round(forecastObject.main.pressure),
+    }
+  ));
+};
+
 export {
   getCurrentTemperature,
   getCurrentWind,
   getCurrentPressure,
   getWeatherIcon,
+  getFilteredForecast,
 };
