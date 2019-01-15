@@ -1,6 +1,7 @@
 const defaultState = {
   date: '01/01/2019',
   locale: 'en',
+  queries: [],
 };
 
 const rootReducer = (state = defaultState, action) => {
@@ -11,6 +12,12 @@ const rootReducer = (state = defaultState, action) => {
       return {
         ...state,
         locale: payload.locale,
+      };
+    }
+    case 'ADD_QUERY': {
+      return {
+        ...state,
+        queries: [...state.queries, payload.query],
       };
     }
     default: {
