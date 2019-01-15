@@ -8,9 +8,20 @@ const getWeatherIcon = (state) => {
   return detectIconByWeatherType(weatherType);
 };
 
+/**
+ * Get 5-day weather forecast list. One forecast per day
+ * @param state
+ * @returns {Object}
+ */
 const getFilteredForecast = (state) => {
-  const forecastFromState = state.weather.forecast.list;
-  return forecastFromState.map(forecastObject => (
+  const forecast = state.weather.forecast.list;
+  const filtered = forecast.filter((forecastObject) => {
+    const currentDay = new Date().getDate();
+    const forecastDay = new Date(forecastObject.dt * 1000).getDate();
+    return (currentDay !== forecastDay) && !!forecastObject.dt_txt.match(/12:00:00/);
+  });
+
+  return filtered.map(forecastObject => (
     {
       date: new Date(forecastObject.dt * 1000),
       temperature: Math.round(forecastObject.main.temp),
