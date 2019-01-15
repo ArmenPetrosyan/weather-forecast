@@ -40,6 +40,12 @@ const weatherReducer = (state = defaultState, action) => {
         forecast: payload.forecast,
       };
     }
+    case 'GET_FORECAST_WEATHER_FAILED': {
+      return {
+        ...state,
+        ...payload,
+      };
+    }
     default: {
       return state;
     }
