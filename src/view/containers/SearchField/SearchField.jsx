@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { setLocation } from 'Root/actions/locationActions';
-import { getInstantWeather } from 'Root/actions/weatherActions';
+import { getInstantWeather, getForecast } from 'Root/actions/weatherActions';
 import { saveQuery } from 'Root/actions/rootActions';
 import { Icon } from 'Components';
 import styles from './SearchField.scss';
@@ -34,10 +34,11 @@ class SearchField extends React.Component {
 
   placeSubmitHandler(event) {
     event.preventDefault();
-    const { changePlace, setInstantWeather, saveQuery } = this.props;
+    const { changePlace, setInstantWeather, saveQuery, setForecast } = this.props;
     const currentPlace = this.placesInput.current.value;
     changePlace(currentPlace);
     setInstantWeather(currentPlace);
+    setForecast(currentPlace);
     saveQuery(currentPlace);
   }
 
@@ -56,6 +57,7 @@ class SearchField extends React.Component {
             type="text"
             ref={this.placesInput}
             value={query}
+            placeholder="London"
             onChange={this.placeChangeHandler}
             pattern="^[a-zA-Zа-яА-Я-\s]+$"
             autoFocus // eslint-disable-line
@@ -80,6 +82,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   changePlace: (newLocation) => { dispatch(setLocation(newLocation)); },
   setInstantWeather: (city) => { dispatch(getInstantWeather(city)); },
+  setForecast: (city) => { dispatch(getForecast(city)); },
   saveQuery: (queryString) => { dispatch(saveQuery(queryString)); },
 });
 

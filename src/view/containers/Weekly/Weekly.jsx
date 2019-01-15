@@ -37,12 +37,14 @@ class Weekly extends React.Component {
               console.log(day);
               return (
                 <WeatherCard
+                  key={index}
                   dateObject={day.date}
                   temperature={day.temperature}
                   min={day.min}
                   max={day.max}
                   pressure={day.pressure}
                   wind={day.wind}
+                  icon={day.icon}
                 />
               )
             })

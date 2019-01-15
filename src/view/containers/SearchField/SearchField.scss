@@ -24,10 +24,14 @@
     padding: 0 20px;
     width: 100%;
 
+    &::placeholder {
+      color: #9AB4CB;
+    }
+
     &:focus {
       color: #5584FF;
 
-      & + .PlacesAutocomplete--icon {
+      & + .SearchField--icon {
         fill: #5584FF;
       }
     }

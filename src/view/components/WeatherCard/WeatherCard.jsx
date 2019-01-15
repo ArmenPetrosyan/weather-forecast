@@ -13,6 +13,7 @@ const WeatherCard = (props) => {
     max,
     wind,
     pressure,
+    icon,
   } = props;
 
   return (
@@ -58,7 +59,7 @@ const WeatherCard = (props) => {
         </div>
       </div>
       <div className={styles['WeatherCard--icon']}>
-        <Icon icon="clear-sky-day" width={133} height={88} />
+        <Icon icon={icon} width={133} height={88} />
       </div>
     </div>
   );
@@ -72,6 +73,7 @@ WeatherCard.propTypes = {
   max: PropTypes.number.isRequired,
   wind: PropTypes.number.isRequired,
   pressure: PropTypes.number.isRequired,
+  icon: PropTypes.string.isRequired,
 };
 
 export default withNamespaces()(WeatherCard);
