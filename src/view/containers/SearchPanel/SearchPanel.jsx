@@ -1,22 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { WeatherWidget, LocationWidget } from 'Components';
+import { getInstantWeather } from 'Root/actions/weatherActions';
 import SearchField from './../SearchField';
 import base from 'Root/App.scss';
-import styles from './SearchPanel.scss';
-import { getInstantWeather } from 'Root/actions/weatherActions';
 import {
   getCurrentTemperature,
   getCurrentWind,
-  getCurrentPressure
+  getCurrentPressure,
 } from 'Root/selectors/weatherSelectors';
+import styles from './SearchPanel.scss';
 
 class SearchPanel extends React.Component {
   constructor(props) {
     super(props);
 
-    const { location, setInstantWeater } = props;
-    setInstantWeater(location);
+    const { location, setInstantWeather } = props;
+    setInstantWeather(location);
   }
 
   render() {
@@ -46,7 +46,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  setInstantWeater: (city) => { dispatch(getInstantWeather(city)); },
+  setInstantWeather: (city) => { dispatch(getInstantWeather(city)); },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchPanel);

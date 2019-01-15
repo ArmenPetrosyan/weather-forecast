@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { setLocation } from '../../../actions/locationActions';
+import { setLocation } from 'Root/actions/locationActions';
+import { getInstantWeather } from 'Root/actions/weatherActions';
+import { Icon } from 'Components';
 import styles from './SearchField.scss';
 import './monoicons/search.svg';
-import { Icon } from 'Components';
 
 class SearchField extends React.Component {
   constructor(props) {
@@ -32,9 +33,10 @@ class SearchField extends React.Component {
 
   placeSubmitHandler(event) {
     event.preventDefault();
-    const { changePlace } = this.props;
+    const { changePlace, setInstantWeather } = this.props;
     const currentPlace = this.placesInput.current.value;
     changePlace(currentPlace);
+    setInstantWeather(currentPlace);
   }
 
   render() {
@@ -73,6 +75,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   changePlace: (newLocation) => { dispatch(setLocation(newLocation)); },
+  setInstantWeather: (city) => { dispatch(getInstantWeather(city)); },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchField);
