@@ -162,5 +162,5 @@ module.exports = {
     host: 'localhost',
     port: 9000,
   },
-  devtool: (env === 'development') ? 'source-map' : null,
+  devtool: (env === 'development') ? 'source-map' : false,
 };
