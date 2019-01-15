@@ -11,7 +11,7 @@ async function getWeatherByCity(city) {
 }
 
 async function getForecastByCity(city) {
-  const result = await fetch(`${APIURL}forecast?q=${city}&appid=${APIKEY}&units=metric&cnt=5`);
+  const result = await fetch(`${APIURL}forecast?q=${city}&appid=${APIKEY}&units=metric`);
   const response = await result.json();
   return response;
 }
