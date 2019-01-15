@@ -34,7 +34,6 @@ class Weekly extends React.Component {
         <div className={`${base.Container} ${styles['Weekly--container']}`}>
           {
             forecast.map((day, index) => {
-              console.log(day);
               return (
                 <WeatherCard
                   key={index}

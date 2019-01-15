@@ -11,28 +11,15 @@ import store from './store';
 import './reset.css';
 import styles from './App.scss';
 
-class App extends Component {
-  static propTypes = {
-    t: PropTypes.func
-  };
+const App = () => (
+  <Provider store={store}>
+    <div className={styles.App}>
+      <Header />
+      <SearchPanel />
+      <Weekly />
+      <Footer />
+    </div>
+  </Provider>
+);
 
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    const { t } = this.props;
-    return (
-      <Provider store={store}>
-        <div className={styles.App}>
-          <Header />
-          <SearchPanel />
-          <Weekly />
-          <Footer />
-        </div>
-      </Provider>
-    );
-  }
-}
-
-export default withNamespaces()(App);
+export default App;
