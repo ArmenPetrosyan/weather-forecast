@@ -4,7 +4,7 @@ const defaultState = {
   queries: [],
 };
 
-const rootReducer = (state = defaultState, action) => {
+const root = (state = defaultState, action) => {
   const { type, payload } = action;
 
   switch (type) {
@@ -26,4 +26,4 @@ const rootReducer = (state = defaultState, action) => {
   }
 };
 
-export default rootReducer;
+export default root;

@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import { withNamespaces } from 'react-i18next';
 import base from 'Root/App.scss';
 import styles from './Weekly.scss';
-import { getForecast } from 'Root/actions/weatherActions';
-import { getFilteredForecast } from 'Root/selectors/weatherSelectors';
+import { getForecast } from 'Root/actions/weather';
+import { getFilteredForecast } from 'Root/selectors/weather';
 import { WeatherCard } from 'Components';
 
 class Weekly extends React.Component {

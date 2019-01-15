@@ -3,7 +3,11 @@
 
   &--container {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+
+    @media (max-width: 720px) {
+      justify-content: center;
+    }
   }
 
   &--heading {

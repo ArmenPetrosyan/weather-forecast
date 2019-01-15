@@ -1,9 +1,9 @@
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import rootReducer from 'Root/reducers/rootReducer';
-import locationReducer from 'Root/reducers/locationReducer';
-import weatherReducer from 'Root/reducers/weatherReducer';
+import root from 'Root/reducers/root';
+import location from 'Root/reducers/location';
+import weather from 'Root/reducers/weather';
 
 const enhancer = () => {
   if (process.env.NODE_ENV === 'development') {
@@ -13,9 +13,9 @@ const enhancer = () => {
 };
 
 const reducers = combineReducers({
-  root: rootReducer,
-  location: locationReducer,
-  weather: weatherReducer,
+  root: root,
+  location: location,
+  weather: weather,
 });
 
 const store = createStore(reducers, enhancer());

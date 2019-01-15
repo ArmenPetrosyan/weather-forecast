@@ -18,7 +18,7 @@ const defaultState = {
   error: null,
 };
 
-const weatherReducer = (state = defaultState, action) => {
+const weather = (state = defaultState, action) => {
   const { type, payload } = action;
 
   switch (type) {
@@ -52,4 +52,4 @@ const weatherReducer = (state = defaultState, action) => {
   }
 };
 
-export default weatherReducer;
+export default weather;

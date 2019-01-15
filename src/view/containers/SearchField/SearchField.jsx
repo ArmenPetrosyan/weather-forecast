@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { setLocation } from 'Root/actions/locationActions';
-import { getInstantWeather, getForecast } from 'Root/actions/weatherActions';
-import { saveQuery } from 'Root/actions/rootActions';
+import { setLocation } from 'Root/actions/location';
+import { getInstantWeather, getForecast } from 'Root/actions/weather';
+import { saveQuery } from 'Root/actions/root';
 import { Icon } from 'Components';
 import styles from './SearchField.scss';
 import './monoicons/search.svg';

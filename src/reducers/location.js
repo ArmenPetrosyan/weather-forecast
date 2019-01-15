@@ -4,7 +4,7 @@ const defaultState = {
   country: 'UA',
 };
 
-const locationReducer = (state = defaultState, action) => {
+const location = (state = defaultState, action) => {
   const { type, payload } = action;
 
   switch (type) {
@@ -20,4 +20,4 @@ const locationReducer = (state = defaultState, action) => {
   }
 };
 
-export default locationReducer;
+export default location;

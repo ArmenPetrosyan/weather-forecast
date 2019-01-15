@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import i18n from '../../../i18n';
+import { setLocale } from 'Root/actions/root';
+import i18n from 'Root/i18n';
+import languages from 'Root/languages';
 import styles from './LocaleSwitcher.scss';
-import languages from '../../../languages';
-import { setLocale } from '../../../actions/rootActions';
 
 class LocaleSwitcher extends React.Component {
   constructor(props) {

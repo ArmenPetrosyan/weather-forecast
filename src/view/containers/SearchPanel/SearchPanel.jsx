@@ -6,7 +6,7 @@ import {
   LocationWidget,
   RecentQueries
 } from 'Components';
-import { getInstantWeather } from 'Root/actions/weatherActions';
+import { getInstantWeather } from 'Root/actions/weather';
 import SearchField from './../SearchField';
 import base from 'Root/App.scss';
 import {
@@ -14,7 +14,7 @@ import {
   getCurrentWind,
   getCurrentPressure,
   getWeatherIcon,
-} from 'Root/selectors/weatherSelectors';
+} from 'Root/selectors/weather';
 import styles from './SearchPanel.scss';
 
 class SearchPanel extends React.Component {
