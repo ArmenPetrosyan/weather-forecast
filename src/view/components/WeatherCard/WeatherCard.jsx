@@ -27,10 +27,10 @@ const WeatherCard = (props) => {
       <div className={styles['WeatherCard--data']}>
         <div className={styles['WeatherCard--data-column']}>
           <div className={styles['WeatherCard--data-info']}>
-            { `${t('Minimum')} ${min}` }
+            { `${t('Minimum')}: ${min}°C` }
           </div>
           <div className={styles['WeatherCard--data-info']}>
-            { `${t('Maximum')} ${max}` }
+            { `${t('Maximum')}: ${max}°C` }
           </div>
         </div>
         <div className={styles['WeatherCard--data-column']}>

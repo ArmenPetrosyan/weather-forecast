@@ -1,9 +1,25 @@
 .Footer {
   padding: 20px 0;
 
+  @media (max-width: 720px) {
+    &--container {
+      align-items: center;
+    }
+  }
+
   &--copyright {
     display: flex;
     align-items: center;
+
+    @media (max-width: 720px) {
+      width: 100%;
+      flex-direction: column;
+      margin-bottom: 10px;
+
+      &-text {
+        margin-bottom: 5px;
+      }
+    }
 
     &-text {
       font-family: 'Open Sans', sans-serif;

@@ -17,14 +17,14 @@ class Footer extends React.Component {
     const { t } = this.props;
     return (
       <footer className={styles.Footer}>
-        <div className={base.Container}>
+        <div className={`${base.Container} ${styles['Footer--container']}`}>
           <div className={styles['Footer--copyright']}>
-            <span className={styles['Footer--copyright-text']}>
+            <div className={styles['Footer--copyright-text']}>
               {t('© 2018 Armen Petrosian. Data provided by')}
-            </span>
-            < OpenWeatherMapImage className={styles['Footer--copyright-image']} />
+            </div>
+            <OpenWeatherMapImage className={styles['Footer--copyright-image']} />
           </div>
-          <LocaleSwitcher/>
+          <LocaleSwitcher className={styles['Footer--locale-switcher']} />
         </div>
       </footer>
     );
