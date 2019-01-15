@@ -159,14 +159,8 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     hot: true,
-    host: 'arnie.site',
+    host: 'localhost',
     port: 9000,
-    proxy: {
-      '/weather': {
-        target: 'http://arnie.site:9000',
-        pathRewrite: { '^/weather': '' },
-      },
-    },
   },
   devtool: (env === 'development') ? 'source-map' : null,
 };
