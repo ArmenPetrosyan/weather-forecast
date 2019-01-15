@@ -1,7 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { WeatherWidget, LocationWidget } from 'Components';
+import {
+  WeatherWidget,
+  LocationWidget,
+  RecentQueries
+} from 'Components';
 import { getInstantWeather } from 'Root/actions/weatherActions';
 import SearchField from './../SearchField';
 import base from 'Root/App.scss';
@@ -27,24 +31,30 @@ class SearchPanel extends React.Component {
     currentTemp: PropTypes.number.isRequired,
     currentWind: PropTypes.number.isRequired,
     currentPressure: PropTypes.number.isRequired,
+    recentQueries: PropTypes.arrayOf(PropTypes.string).isRequired,
   }
 
   render() {
-    const { location, currentTemp, currentWind, currentPressure, weatherIcon } = this.props;
+    const { location, currentTemp, currentWind, currentPressure, weatherIcon, recentQueries } = this.props;
 
     return (
-      <section className={styles.SearchPanel}>
+      <React.Fragment>
+        <section className={styles.SearchPanel}>
+          <div className={base.Container}>
+            <SearchField />
+            <WeatherWidget
+              temperature={currentTemp}
+              wind={currentWind}
+              pressure={currentPressure}
+              icon={weatherIcon}
+            />
+            <LocationWidget city={location} />
+          </div>
+        </section>
         <div className={base.Container}>
-          <SearchField />
-          <WeatherWidget
-            temperature={currentTemp}
-            wind={currentWind}
-            pressure={currentPressure}
-            icon={weatherIcon}
-          />
-          <LocationWidget city={location} />
+          {recentQueries.length ? <RecentQueries queries={recentQueries}/> : null}
         </div>
-      </section>
+      </React.Fragment>
     );
   }
 }
@@ -55,6 +65,7 @@ const mapStateToProps = state => ({
   currentWind: getCurrentWind(state),
   currentPressure: getCurrentPressure(state),
   weatherIcon: getWeatherIcon(state),
+  recentQueries: state.root.queries,
 });
 
 const mapDispatchToProps = dispatch => ({

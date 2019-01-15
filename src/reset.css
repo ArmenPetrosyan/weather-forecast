@@ -27,3 +27,7 @@ button {
     background: none;
     outline: none;
 }
+
+ul {
+    list-style-type: none;
+}
