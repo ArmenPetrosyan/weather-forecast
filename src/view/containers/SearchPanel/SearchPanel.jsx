@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { WeatherWidget, LocationWidget } from 'Components';
 import { getInstantWeather } from 'Root/actions/weatherActions';
@@ -8,6 +9,7 @@ import {
   getCurrentTemperature,
   getCurrentWind,
   getCurrentPressure,
+  getWeatherIcon,
 } from 'Root/selectors/weatherSelectors';
 import styles from './SearchPanel.scss';
 
@@ -19,8 +21,16 @@ class SearchPanel extends React.Component {
     setInstantWeather(location);
   }
 
+  static propTypes = {
+    location: PropTypes.string.isRequired,
+    weatherIcon: PropTypes.string.isRequired,
+    currentTemp: PropTypes.number.isRequired,
+    currentWind: PropTypes.number.isRequired,
+    currentPressure: PropTypes.number.isRequired,
+  }
+
   render() {
-    const { location, currentTemp, currentWind, currentPressure } = this.props;
+    const { location, currentTemp, currentWind, currentPressure, weatherIcon } = this.props;
 
     return (
       <section className={styles.SearchPanel}>
@@ -30,6 +40,7 @@ class SearchPanel extends React.Component {
             temperature={currentTemp}
             wind={currentWind}
             pressure={currentPressure}
+            icon={weatherIcon}
           />
           <LocationWidget city={location} />
         </div>
@@ -43,6 +54,7 @@ const mapStateToProps = state => ({
   currentTemp: getCurrentTemperature(state),
   currentWind: getCurrentWind(state),
   currentPressure: getCurrentPressure(state),
+  weatherIcon: getWeatherIcon(state),
 });
 
 const mapDispatchToProps = dispatch => ({

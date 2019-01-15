@@ -6,6 +6,11 @@ const defaultState = {
   wind: {
     speed: 0,
   },
+  weather: [
+    {
+      main: '',
+    },
+  ],
 };
 
 const weatherReducer = (state = defaultState, action) => {

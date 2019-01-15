@@ -48,7 +48,10 @@ WeatherBadge.propTypes = {
 };
 
 const WeatherWidget = (props) => {
-  const { t, temperature, wind, pressure } = props;
+  const {
+    t, temperature, wind, pressure, icon,
+  } = props;
+
   return (
     <div className={styles.WeatherWidget}>
       <div className={styles['WeatherWidget--data']}>
@@ -57,7 +60,7 @@ const WeatherWidget = (props) => {
         <WeatherBadge icon="wind" data={`${wind} ${t('m/s')}`} />
       </div>
       <div className={styles['WeatherWidget--icon']}>
-        <Icon icon="clear-sky-day" width={104} height={91} />
+        <Icon icon={icon} width={104} height={91} />
       </div>
     </div>
   );
@@ -65,6 +68,9 @@ const WeatherWidget = (props) => {
 
 WeatherWidget.propTypes = {
   t: PropTypes.func.isRequired,
+  temperature: PropTypes.number.isRequired,
+  wind: PropTypes.number.isRequired,
+  pressure: PropTypes.number.isRequired,
 };
 
 export default withNamespaces()(WeatherWidget);
