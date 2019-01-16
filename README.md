@@ -18,6 +18,8 @@
 - The app saves 10 recent search queries.
 - Display weather forecast up to next 5 days (because of [OpenWeatherMap](https://openweathermap.org/api) restrictions we sometimes can get data for less days)
 
+View [**DEMO here**](https://arnie.site/weather-forecast/).
+
 ### Technical info
 
 * Building with **Webpack 4** using configuration written from scratch
