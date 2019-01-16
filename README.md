@@ -16,7 +16,7 @@
 - Kyiv, UA selected by default.
 - Use search form to find weather for specific city. 
 - The app saves 10 recent search queries.
-- Display weather forecast up to next 5 days (because of OpenWeatherMap restrictions we sometimes can get data for less days)
+- Display weather forecast up to next 5 days (because of [OpenWeatherMap](https://openweathermap.org/api) restrictions we sometimes can get data for less days)
 
 ### Technical info
 
