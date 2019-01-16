@@ -7,11 +7,19 @@
 ![Linter ESlint](https://img.shields.io/badge/linter-ESlint-green.svg?logo=eslint)
 ![Codestyle Airbnb](https://img.shields.io/badge/codestyle-Airbnb-green.svg?logo=airbnb)
 
-## Arnie's React JS custom boilerplate
-This is a base-configured React app. I've made it to create my own React JS projects easily in future.
+## Weather forecast application
 
-### This project template includes next features:
-Implemented:
+![](./assets/screenshots/full-app.png)
+
+### Features
+- The application shows current **temperature**, **wind speed** and **pressure** for selected location.
+- Kyiv, UA selected by default.
+- Use search form to find weather for specific city. 
+- The app saves 10 recent search queries.
+- Display weather forecast up to next 5 days (because of OpenWeatherMap restrictions we sometimes can get data for less days)
+
+### Technical info
+
 * Building with **Webpack 4** using configuration written from scratch
 * Separated **Production** and **Development** configs
 * ES6+ support with **Babel 7**
@@ -21,19 +29,17 @@ Implemented:
 * Code style controlled by Airbnb **ESlint** config, and a few additional rules and overrides.
 * Internationalization with **i18next** library
 
-Not implemented yet:
-* Work with external API
-* Unit Testing
-* Both Function and Feature-first folder structures
-
 #### To *start* the project use the following instructions:
 ```
 npm install
 npm run start
 ```
+Then project will be running on [http://localhost:9000]()
 
-#### To *build* the project use the following instructions:
+#### To *build*:
 ```
 npm install
 npm run build
+# npm install -g local-web-server
+ws -d dist
 ```
