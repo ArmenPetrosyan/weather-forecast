@@ -12,7 +12,7 @@ const RecentQueries = (props) => {
       </div>
       <ul className={styles['RecentQueries--list']}>
         {
-          queries.slice(0, 5).map(query => (
+          queries.slice(0, 10).map(query => (
             <li className={styles['RecentQueries--item']}>{query}</li>
           ))
         }
