@@ -1,3 +1,3 @@
-import WeatherCard from './WeatherCard.jsx';
+import WeatherCard from './WeatherCard';
 
 export default WeatherCard;

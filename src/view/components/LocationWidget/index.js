@@ -1,3 +1,3 @@
-import LocationWidget from './LocationWidget.jsx';
+import LocationWidget from './LocationWidget';
 
 export default LocationWidget;

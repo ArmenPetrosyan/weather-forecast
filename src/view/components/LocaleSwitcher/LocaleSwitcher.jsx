@@ -18,7 +18,7 @@ class LocaleSwitcher extends React.Component {
   }
 
   onLocaleChange({ target }) {
-    const { changeLocale } = this.props; // eslint-ignore-line
+    const { changeLocale } = this.props;
     const locale = target.value;
     i18n.changeLanguage(locale);
     changeLocale(locale);

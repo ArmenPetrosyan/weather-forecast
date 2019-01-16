@@ -1,3 +1,3 @@
-import RecentQueries from './RecentQueries.jsx';
+import RecentQueries from './RecentQueries';
 
 export default RecentQueries;

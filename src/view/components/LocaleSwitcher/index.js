@@ -1,3 +1,3 @@
-import LocaleSwitcher from './LocaleSwitcher.jsx';
+import LocaleSwitcher from './LocaleSwitcher';
 
 export default LocaleSwitcher;

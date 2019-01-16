@@ -1,3 +1,3 @@
-import DateWidget from './DateWidget.jsx';
+import DateWidget from './DateWidget';
 
 export default DateWidget;

@@ -1,3 +1,3 @@
-import SearchPanel from './SearchPanel.jsx';
+import SearchPanel from './SearchPanel';
 
 export default SearchPanel;

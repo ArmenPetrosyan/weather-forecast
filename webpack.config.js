@@ -46,6 +46,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
+    extensions: ['.js', '.jsx', '.json'],
     alias: {
       Root: path.resolve(__dirname, 'src/'),
       View: path.resolve(__dirname, 'src/view/'),

@@ -71,6 +71,7 @@ WeatherWidget.propTypes = {
   temperature: PropTypes.number.isRequired,
   wind: PropTypes.number.isRequired,
   pressure: PropTypes.number.isRequired,
+  icon: PropTypes.string.isRequired,
 };
 
 export default withNamespaces()(WeatherWidget);

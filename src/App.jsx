@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
-import { Provider } from 'react-redux'
-import { withNamespaces } from 'react-i18next';
-import PropTypes from 'prop-types';
+import React from 'react';
+import { Provider } from 'react-redux';
 import Header from 'View/containers/Header';
 import SearchPanel from 'View/containers/SearchPanel';
 import Footer from 'View/containers/Footer';

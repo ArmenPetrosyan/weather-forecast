@@ -1,3 +1,3 @@
-import Weekly from './Weekly.jsx';
+import Weekly from './Weekly';
 
 export default Weekly;

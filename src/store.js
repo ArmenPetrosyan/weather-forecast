@@ -13,9 +13,9 @@ const enhancer = () => {
 };
 
 const reducers = combineReducers({
-  root: root,
-  location: location,
-  weather: weather,
+  root,
+  location,
+  weather,
 });
 
 const store = createStore(reducers, enhancer());

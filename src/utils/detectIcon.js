@@ -11,6 +11,6 @@ const detectIconByWeatherType = (weatherType) => {
     default:
       return 'clear-sky-day';
   }
-}
+};
 
 export default detectIconByWeatherType;
